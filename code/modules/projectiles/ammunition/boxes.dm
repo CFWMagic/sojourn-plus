@@ -44,7 +44,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
-	max_ammo = 30
+	max_ammo = 100
 
 /obj/item/ammo_magazine/ammobox/pistol_35/scrap
 	name = "ammunition packet (old 9mm)"
@@ -84,7 +84,7 @@
 	icon_state = "pistol_si"
 	ammo_type = /obj/item/ammo_casing/pistol_35/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 90
+	max_ammo = 100
 
 /obj/item/ammo_magazine/ammobox/pistol_35/biomatter
 	name = "ammunition packet (9mm Caustic)"
@@ -98,7 +98,7 @@
 	desc = "A large box of police grade 9mm."
 	matter = list(MATERIAL_STEEL = 15)
 	w_class = ITEM_SIZE_BULKY
-	max_ammo = 200
+	max_ammo = 400
 	icon_state = "pistol_large"
 
 /obj/item/ammo_magazine/ammobox/pistol_35/large/lethal
@@ -127,7 +127,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	max_ammo = 30
+	max_ammo = 60
 
 /obj/item/ammo_magazine/ammobox/magnum_40/scrap
 	name = "ammunition packet (old 10mm Magnum)"
@@ -167,7 +167,7 @@
 	icon_state = "magnum_si"
 	ammo_type = /obj/item/ammo_casing/magnum_40/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 70
+	max_ammo = 60
 
 /obj/item/ammo_magazine/ammobox/magnum_40/biomatter
 	name = "ammunition packet (10mm Magnum Caustic)"
@@ -183,7 +183,7 @@
 	w_class = ITEM_SIZE_BULKY
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	max_ammo = 150
+	max_ammo = 240
 
 /obj/item/ammo_magazine/ammobox/magnum_40/large/lethal
 	name = "ammunition box (10mm Magnum hollow-point)"
@@ -213,7 +213,7 @@
 	mag_well = MAG_WELL_BOX
 	caliber = CAL_LRIFLE
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
-	max_ammo = 200
+	max_ammo = 300
 
 /obj/item/ammo_magazine/ammobox/light_rifle_257/pickup(mob/user)
 	..()
@@ -290,14 +290,14 @@
 	icon_state = "clrifle_si"
 	ammo_type = /obj/item/ammo_casing/light_rifle_257/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 120
+	max_ammo = 60
 
 /obj/item/ammo_magazine/ammobox/light_rifle_257/scrap
 	name = "ammunition packet (old 6.5mm Carbine)"
 	icon_state = "clrifle_s"
 	ammo_type = /obj/item/ammo_casing/light_rifle_257/scrap
 	w_class = ITEM_SIZE_NORMAL
-	max_ammo = 30
+	max_ammo = 60
 
 ////7.62mm Rifle////
 
@@ -312,7 +312,7 @@
 	mag_well = MAG_WELL_BOX
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	mag_type = SPEEDLOADER | MAGAZINE
-	max_ammo = 180
+	max_ammo = 300
 
 /obj/item/ammo_magazine/ammobox/rifle_75/pickup(mob/user)
 	..()
@@ -352,7 +352,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = CAL_RIFLE
 	ammo_type = /obj/item/ammo_casing/rifle_75
-	max_ammo = 30
+	max_ammo = 60
 
 /obj/item/ammo_magazine/ammobox/rifle_75_small/rubber
 	name = "ammunition packet (7.62mm Rifle rubber)"
@@ -391,7 +391,7 @@
 	icon_state = "srifle_si"
 	ammo_type = /obj/item/ammo_casing/rifle_75/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 90
+	max_ammo = 60
 
 
 ////snowflake 10x24////
@@ -403,7 +403,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = "10x24"
 	ammo_type = /obj/item/ammo_casing/c10x24
-	max_ammo = 200
+	max_ammo = 400
 
 /obj/item/ammo_magazine/ammobox/c10x24_small
 	name = "ammunition packet (10x24mm caseless)"
@@ -412,7 +412,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = "10x24"
 	ammo_type = /obj/item/ammo_casing/c10x24
-	max_ammo = 80 //6.6 reloads of the SWAT, 2 of the bond, almost 1 full pulse mag
+	max_ammo = 100 //6.6 reloads of the SWAT, 2 of the bond, almost 1 full pulse mag
 
 // .223 laser
 
@@ -423,19 +423,19 @@
 	matter = list(MATERIAL_PLASTIC = 1)
 	caliber = CAL_SCI
 	ammo_type = /obj/item/ammo_casing/laser_223
-	max_ammo = 200
+	max_ammo = 300
 /*
 /obj/item/ammo_magazine/ammobox/laser_223/box/ap
 	name = "ammunition box (5.56mm PL)"
 	icon_state = "box223-ap-laser"
 	ammo_type = /obj/item/ammo_casing/laser_223/ap
-	max_ammo = 200
+	max_ammo = 300
 
 /obj/item/ammo_magazine/ammobox/laser_223/box/lethal
 	name = "ammunition box (5.56mm DL)"
 	icon_state = "box223-lethal-laser"
 	ammo_type = /obj/item/ammo_casing/laser_223/lethal
-	max_ammo = 200
+	max_ammo = 300
 */
 //// 12mm heavy pistol
 
@@ -445,7 +445,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = CAL_50
 	ammo_type = /obj/item/ammo_casing/kurtz_50
-	max_ammo = 24
+	max_ammo = 60
 
 /obj/item/ammo_magazine/ammobox/kurtz_50/rubber
 	name = "ammunition box (12mm rubber)"
@@ -480,7 +480,7 @@
 	icon_state = "box50-si"
 	ammo_type = /obj/item/ammo_casing/kurtz_50/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 50
+	max_ammo = 60
 
 //// 14.5×114mm ////
 
@@ -516,7 +516,7 @@
 	name = "ammunition box (old 14.5mm Anti-Materiel)"
 	icon_state = "antim_s"
 	ammo_type = /obj/item/ammo_casing/antim/scrap
-	max_ammo = 5
+	max_ammo = 15
 
 //// 17.7mm rolled shot ////
 
@@ -539,7 +539,7 @@
 	matter = list(MATERIAL_STEEL = 5, MATERIAL_CARDBOARD = 1)
 	caliber = CAL_HRIFLE
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
-	max_ammo = 40
+	max_ammo = 50
 
 /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/rubber
 	name = "ammunition packet (8.6mm rubber)"
@@ -577,7 +577,7 @@
 	desc = "A box of 8.6x70mm heavy rifle ammunition. 60ct, subcaliber laser rounds."
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408/laser
 	matter = list(MATERIAL_CARDBOARD = 1)
-	max_ammo = 60
+	max_ammo = 50
 
 /obj/item/ammo_magazine/ammobox/heavy_rifle_408_small/scrap
 	name = "ammunition packet (old 8.6mm Rifle)"
@@ -595,7 +595,7 @@
 	mag_well = MAG_WELL_BOX
 	caliber = CAL_HRIFLE
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
-	max_ammo = 120
+	max_ammo = 200
 
 /obj/item/ammo_magazine/ammobox/heavy_rifle_408/pickup(mob/user)
 	..()
@@ -765,7 +765,7 @@
 	matter = list(MATERIAL_CARDBOARD = 2)
 	w_class = ITEM_SIZE_BULKY
 	ammo_type = /obj/item/ammo_casing/shotgun/illumination
-	max_ammo = 70 //2x the ammo for being map spawned
+	max_ammo = 80 //2x the ammo for being map spawned
 
 /obj/item/ammo_magazine/ammobox/shotgun/flash
 	name = "ammunition packet (20mm Illumination)"

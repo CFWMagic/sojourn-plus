@@ -419,7 +419,7 @@
 	caliber = CAL_LRIFLE
 	matter = list(MATERIAL_STEEL = 12)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
-	max_ammo = 50
+	max_ammo = 100 //50
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/light_rifle_257_drum/empty
