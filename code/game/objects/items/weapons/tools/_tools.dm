@@ -73,6 +73,8 @@
 	var/precision = 0	//Subtracted from failure rates
 	var/workspeed = 1	//Worktimes are divided by this
 
+	var/spawn_full = TRUE
+
 
 /******************************
 	/* Core Procs */
@@ -80,15 +82,16 @@
 //Fuel and cell spawn
 /obj/item/tool/New()
 	..()
-	if(cell)
+	if(cell && spawn_full)
 		cell = new cell(src) //So when we have a cell spawn it spawns a cell, otherwise it will pick a suitable cell
 
-	if(!cell && suitable_cell)
+	if(!cell && suitable_cell && spawn_full)
 		cell = new suitable_cell(src) //No cell? We add are suitable cell
 
 	if(use_fuel_cost)
 		create_reagents(max_fuel)
-		reagents.add_reagent(my_fuel, max_fuel)
+		if(spawn_full)
+			reagents.add_reagent(my_fuel, max_fuel)
 
 	if(use_stock_cost)
 		stock = max_stock
@@ -109,7 +112,7 @@
 /obj/item/tool/Created()
 	QDEL_NULL(cell)
 	if(use_fuel_cost)
-		consume_fuel(get_fuel())
+		consume_fuel(get_fuel(), forced = TRUE)
 
 
 
@@ -911,7 +914,11 @@
 /obj/item/proc/get_fuel()
 	return ( reagents ? reagents.get_reagent_amount(my_fuel) : 0 )
 
-/obj/item/tool/proc/consume_fuel(volume)
+/obj/item/tool/proc/consume_fuel(volume, forced)
+	if(forced)
+		reagents.remove_reagent(my_fuel, volume)
+		return TRUE
+
 	//Fixes tool off-state behavior
 	if(toggleable && !switched_on)
 		return TRUE
@@ -1109,7 +1116,8 @@
 					tool_repair = min(tool_repair, damage_to_repair)
 					var/perma_health_loss = tool_repair * 0.50 //50%
 
-					T.max_health -= perma_health_loss
+					// 24.12.05 CFW - Remove permanent damage
+					// T.max_health -= perma_health_loss
 					T.adjustToolHealth(tool_repair, user)
 					if(user.stats.getStat(STAT_MEC) > STAT_LEVEL_BASIC/2)
 						to_chat(user, SPAN_NOTICE("You knowledge in tools helped you repair it better."))
@@ -1276,8 +1284,9 @@
 
 /obj/screen/item_action/top_bar/tool_info
 	icon = 'icons/mob/screen/gun_actions.dmi'
-	screen_loc = "8,1:13"
+	screen_loc = "7.95,1.4"
 	minloc = "7,2:13"
+	ErisOptimized_minloc = "16,10.3"
 	name = "Tool information"
 	icon_state = "info"
 

@@ -34,6 +34,25 @@
 	new /obj/item/reagent_containers/hypospray/autoinjector(src)
 	new /obj/item/device/scanner/health(src)
 
+/obj/item/storage/firstaid/regular/si
+	name = "soteria branded first-aid kit"
+	desc = "A soteria-branded emergency medical kit for those serious boo-boos. Contains more advanced and more expensive gauze and salves."
+	icon_state = "purplefirstaid"
+	item_state = "firstaid-purplefirstaid"
+
+/obj/item/storage/firstaid/regular/si/empty
+	empty = TRUE
+
+/obj/item/storage/firstaid/regular/si/populate_contents()
+	if (empty) return
+	new /obj/item/stack/medical/bruise_pack/soteria(src)
+	new /obj/item/stack/medical/bruise_pack/soteria(src)
+	new /obj/item/stack/medical/ointment/soteria(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector(src)
+	new /obj/item/device/scanner/health(src)
+
+
 /obj/item/storage/firstaid/fire
 	name = "fire first-aid kit"
 	desc = "It's an emergency medical kit for when the toxins lab <i>-spontaneously-</i> burns down."
@@ -63,6 +82,9 @@
 	if (empty) return
 	new /obj/item/stack/medical/bruise_pack(src)
 	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/ointment(src)
+	new /obj/item/stack/medical/ointment(src)
 	new /obj/item/stack/medical/ointment(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector/spaceacillin(src)
 	new /obj/item/reagent_containers/hypospray/autoinjector(src)
@@ -559,7 +581,7 @@
 	icon_state = "pill_canister"
 	icon = 'icons/obj/chemical.dmi'
 	item_state = "contsolid"
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_TINY //ITEM_SIZE_SMALL
 	level = BELOW_PLATING_LEVEL //sneaky
 	can_hold = list(/obj/item/reagent_containers/pill,
 		/obj/item/dice,
@@ -585,6 +607,13 @@
 	new /obj/item/reagent_containers/pill/antitox(src)
 	new /obj/item/reagent_containers/pill/antitox(src)
 	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
+	new /obj/item/reagent_containers/pill/antitox(src)
 
 /obj/item/storage/pill_bottle/bicaridine
 	name = "bottle of Bicaridine pills"
@@ -592,6 +621,13 @@
 	desc = "Contains pills used to stabilize the severely injured."
 
 /obj/item/storage/pill_bottle/bicaridine/populate_contents()
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
+    new /obj/item/reagent_containers/pill/bicaridine(src)
     new /obj/item/reagent_containers/pill/bicaridine(src)
     new /obj/item/reagent_containers/pill/bicaridine(src)
     new /obj/item/reagent_containers/pill/bicaridine(src)
@@ -613,6 +649,13 @@
     new /obj/item/reagent_containers/pill/dexalin_plus(src)
     new /obj/item/reagent_containers/pill/dexalin_plus(src)
     new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
+    new /obj/item/reagent_containers/pill/dexalin_plus(src)
 
 /obj/item/storage/pill_bottle/dermaline
 	name = "bottle of Dermaline pills"
@@ -620,6 +663,13 @@
 	desc = "Contains pills used to treat burn wounds."
 
 /obj/item/storage/pill_bottle/dermaline/populate_contents()
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
+    new /obj/item/reagent_containers/pill/dermaline(src)
     new /obj/item/reagent_containers/pill/dermaline(src)
     new /obj/item/reagent_containers/pill/dermaline(src)
     new /obj/item/reagent_containers/pill/dermaline(src)
@@ -641,6 +691,13 @@
     new /obj/item/reagent_containers/pill/dylovene(src)
     new /obj/item/reagent_containers/pill/dylovene(src)
     new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
+    new /obj/item/reagent_containers/pill/dylovene(src)
 
 /obj/item/storage/pill_bottle/carthatoline
 	name = "bottle of Carthatoline pills"
@@ -648,6 +705,13 @@
 	desc = "Contains pills used to counteract severe poisoning and liver failure."
 
 /obj/item/storage/pill_bottle/carthatoline/populate_contents()
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
+	new /obj/item/reagent_containers/pill/carthatoline(src)
 	new /obj/item/reagent_containers/pill/carthatoline(src)
 	new /obj/item/reagent_containers/pill/carthatoline(src)
 	new /obj/item/reagent_containers/pill/carthatoline(src)
@@ -669,6 +733,13 @@
 	new /obj/item/reagent_containers/pill/inaprovaline(src)
 	new /obj/item/reagent_containers/pill/inaprovaline(src)
 	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
+	new /obj/item/reagent_containers/pill/inaprovaline(src)
 
 /obj/item/storage/pill_bottle/kelotane
 	name = "bottle of Kelotane pills"
@@ -676,6 +747,13 @@
 	desc = "Contains pills used to treat burns."
 
 /obj/item/storage/pill_bottle/kelotane/populate_contents()
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
+	new /obj/item/reagent_containers/pill/kelotane(src)
 	new /obj/item/reagent_containers/pill/kelotane(src)
 	new /obj/item/reagent_containers/pill/kelotane(src)
 	new /obj/item/reagent_containers/pill/kelotane(src)
@@ -697,6 +775,13 @@
     new /obj/item/reagent_containers/pill/spaceacillin(src)
     new /obj/item/reagent_containers/pill/spaceacillin(src)
     new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
+    new /obj/item/reagent_containers/pill/spaceacillin(src)
 
 /obj/item/storage/pill_bottle/tramadol
 	name = "bottle of Tramadol pills"
@@ -704,6 +789,13 @@
 	desc = "Contains pills used to relieve pain."
 
 /obj/item/storage/pill_bottle/tramadol/populate_contents()
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
+	new /obj/item/reagent_containers/pill/tramadol(src)
 	new /obj/item/reagent_containers/pill/tramadol(src)
 	new /obj/item/reagent_containers/pill/tramadol(src)
 	new /obj/item/reagent_containers/pill/tramadol(src)
@@ -725,6 +817,13 @@
 	new /obj/item/reagent_containers/pill/citalopram(src)
 	new /obj/item/reagent_containers/pill/citalopram(src)
 	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
+	new /obj/item/reagent_containers/pill/citalopram(src)
 
 /obj/item/storage/pill_bottle/prosurgeon
 	name = "bottle of ProSurgeon pills"
@@ -739,6 +838,13 @@
 	new /obj/item/reagent_containers/pill/prosurgeon(src)
 	new /obj/item/reagent_containers/pill/prosurgeon(src)
 	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
+	new /obj/item/reagent_containers/pill/prosurgeon(src)
 
 /obj/item/storage/pill_bottle/bloodregen
 	name = "bottle of Blood Deficiency supplements"
@@ -746,6 +852,13 @@
 	desc = "Contains pills to help speed up natural blood generation."
 
 /obj/item/storage/pill_bottle/bloodregen/populate_contents()
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
+	new /obj/item/reagent_containers/pill/bloodregen(src)
 	new /obj/item/reagent_containers/pill/bloodregen(src)
 	new /obj/item/reagent_containers/pill/bloodregen(src)
 	new /obj/item/reagent_containers/pill/bloodregen(src)

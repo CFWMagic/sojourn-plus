@@ -201,7 +201,11 @@ obj/item/storage/fancy/dogtreats/populate_contents()
 	create_reagents(10 * storage_slots)//so people can inject cigarettes without opening a packet, now with being able to inject the whole one
 
 /obj/item/storage/fancy/cigarettes/update_icon()
-	icon_state = "[initial(icon_state)][contents.len]"
+// 24.12.05 CFW - Crude fix to enable holding 21 cigarette
+	if(contents.len > 6)
+		icon_state = "[initial(icon_state)][6]"
+	else	
+		icon_state = "[initial(icon_state)][contents.len]"
 	return
 
 /obj/item/storage/fancy/cigarettes/remove_from_storage(obj/item/W as obj, atom/new_location)

@@ -125,7 +125,7 @@
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/pulse_rifle = 1,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/sa_kalashnikov = 2,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/tac_kalashnikov = 1,
-				/obj/item/computer_hardware/hard_drive/portable/design/guns/python = 1,
+				/obj/item/computer_hardware/hard_drive/portable/design/guns/viper = 1,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/copperhead = 2,
 				/obj/item/computer_hardware/hard_drive/portable/design/blackshield/luger = 3,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/bulldog = 3,
@@ -139,8 +139,10 @@
 
 /obj/random/lathe_disk/rifle_heavy/item_to_spawn()
 	return pickweight(list(
+				/obj/item/computer_hardware/hard_drive/portable/design/nt/shepherd,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/omni/longarm,
 				/obj/item/computer_hardware/hard_drive/portable/design/guns/omni = 4))
+
 
 
 /obj/random/lathe_disk/pistol

@@ -11,7 +11,7 @@
 	license = -1
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/basic_utility
-	disk_name = "Church of Absolute Bioprinter Utilities Factory"
+	disk_name = "Church of the Absolute Bioprinter Utilities Factory"
 	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Absolute."
 	icon_state = "neotheology_testament_u"
 	license = -1
@@ -60,7 +60,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/basic_utility/public
-	disk_name = "Church of Absolute Bioprinter Products and Utilities"
+	disk_name = "Church of the Absolute Bioprinter Products and Utilities"
 	desc = "This disk is made by the Church and distributed at a nominal cost to anyone who wishes to use a bioprinter for basic needs."
 	license = 20
 	designs = list(
@@ -106,11 +106,13 @@
 		/datum/design/autolathe/sword/nt_longsword,
 		/datum/design/autolathe/sword/nt_dagger,
 		/datum/design/autolathe/sword/nt_halberd,
+		/datum/design/autolathe/sword/nt_polehammer,
 		/datum/design/autolathe/sword/nt_scourge,
 		/datum/design/autolathe/sword/nt_spear,
 		/datum/design/autolathe/sword/nt_warhammer,
 		/datum/design/autolathe/sword/nt_flanged,
 		/datum/design/autolathe/sword/nt_power,
+		/datum/design/autolathe/nt/sword/nt_verutum,
 		/datum/design/autolathe/nt/shield/nt_buckler,
 		/datum/design/autolathe/shield/nt_shield,
 		/datum/design/autolathe/gun/plasma/martyr,
@@ -164,6 +166,7 @@
 		/datum/design/autolathe/sword/nt_longsword,
 		/datum/design/autolathe/sword/nt_dagger,
 		/datum/design/autolathe/sword/nt_halberd,
+		/datum/design/autolathe/sword/nt_polehammer,
 		/datum/design/autolathe/sword/nt_scourge,
 		/datum/design/autolathe/sword/nt_spear,
 		/datum/design/autolathe/nt/shield/nt_buckler,
@@ -209,7 +212,8 @@
 		/datum/design/autolathe/gun/taser,
 		/datum/design/autolathe/gun/sniperrifle = 6,
 		/datum/design/autolathe/ammo/pistol_ammobox_biomatter,
-		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 2
+		/datum/design/autolathe/ammo/magnum_ammobox_biomatter = 2,
+		/datum/design/autolathe/gun/shepherd = 6
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/old_guns/plus
@@ -334,6 +338,23 @@
 		/datum/design/autolathe/ammo/shotgun_biomatter = 5
 		)
 
+//Church rifle
+/obj/item/computer_hardware/hard_drive/portable/design/nt/shepherd
+	disk_name = "Absolute Armory - OT MR 8.6x70mm Shepherd"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/shepherd = 3,
+		/datum/design/autolathe/ammo/hrifle_practice = 0,
+		/datum/design/autolathe/ammo/hrifle_rubber,
+		/datum/design/autolathe/ammo/hrifle,
+		/datum/design/autolathe/ammo/hrifle_lethal = 2,
+		)
+
+/obj/item/computer_hardware/hard_drive/portable/design/nt/shepherd/plus
+	disk_name = "Absolute Armory - OT MR 8.6x70mm Shepherd Plus"
+
+	license = 10
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/regulator/plus
 	disk_name = "Absolute Armory - 20mm Regulator Shotgun Plus"

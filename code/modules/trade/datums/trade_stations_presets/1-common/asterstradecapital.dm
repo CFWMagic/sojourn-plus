@@ -37,6 +37,15 @@
 			/obj/item/device/geiger,
 			/obj/item/device/toner
 		),
+		"Storage Utilities" = list(
+			/obj/item/storage/hcases/ammo,
+			/obj/item/storage/hcases/parts,
+			/obj/item/storage/hcases/med,
+			/obj/item/storage/hcases/engi,
+			/obj/item/storage/bag/produce,
+			/obj/item/storage/bag/sheetsnatcher,
+			/obj/item/storage/bag/chemistry
+		),
 		"Lonestar Cells" = list(
 			/obj/item/cell/small,
 			/obj/item/cell/small/high,
@@ -82,7 +91,9 @@
 			/obj/item/toy/figure/character/bobblehead/red_soldier,
 			/obj/item/toy/figure/character/bobblehead/metacat,
 			/obj/item/toy/figure/character/bobblehead/shitcurity,
-			/obj/item/toy/figure/character/bobblehead/metro_patrolman
+			/obj/item/toy/figure/character/bobblehead/metro_patrolman,
+			/obj/item/gun/projectile/revolver/capgun,
+			/obj/item/storage/box/blanks
 		),
 		"Holland and Sullivan Sidearms & Ammunition" = list(
 			/obj/item/clothing/accessory/holster,
@@ -109,7 +120,7 @@
 			/obj/item/part/gun/barrel/pistol,
 			/obj/item/part/gun/barrel/magnum
 		),
-		"Miscellanous" = list(
+		"Miscellaneous" = list(
 			/obj/item/device/camera,
 			/obj/item/device/camera_film,
 			/obj/item/storage/photo_album,
@@ -162,7 +173,7 @@
 			/obj/structure/synthesized_instrument/synthesizer/piano = good_data("Piano", list(-4, 2), 1200),
 			/obj/item/media/boombox = good_data("NT Boom Box", list(-400000000, -399999999), 300) //When will K5 fix this???
 		),
-		"Nicknacks & Bobbles" = list(
+		"Trinkets & Baubles" = list(
 			/obj/item/oddity/ls/collector_coin = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/pamphlet = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/rod_figure = custom_good_amount_range(list(3, 6)),

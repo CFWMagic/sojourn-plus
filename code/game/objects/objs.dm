@@ -259,6 +259,8 @@
 /obj/proc/add_projectile_penetration(newmult)
 	armor_divisor = initial(armor_divisor) + newmult
 
+/obj/proc/wound_mult_adder(newmult)
+
 /obj/proc/multiply_pierce_penetration(newmult)
 
 /obj/proc/multiply_projectile_step_delay(newmult)
@@ -268,3 +270,7 @@
 /obj/proc/multiply_pve_damage(newmult)
 
 /obj/proc/add_fire_stacks(newmult)
+
+//Proj for thrown items
+/obj/proc/post_thrown_hit(mob)
+	return

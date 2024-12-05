@@ -213,6 +213,10 @@
 	name = "NT Halberd"
 	build_path = /obj/item/tool/spear/halberd
 
+/datum/design/autolathe/sword/nt_polehammer
+	name = "NT Polehammer"
+	build_path = /obj/item/tool/spear/polehammer
+
 /datum/design/autolathe/sword/nt_spear
 	name = "NT Spear"
 	build_path = /obj/item/tool/sword/nt/spear
@@ -230,7 +234,7 @@
 	build_path = /obj/item/shield/buckler/nt
 
 /datum/design/autolathe/nt/sword/nt_verutum
-	name = "OT Javelin"
+	name = "NT Javelin"
 	build_path = /obj/item/stack/thrown/nt/verutum
 
 /datum/design/autolathe/tool_upgrade/sanctifier

@@ -11,6 +11,7 @@
 	matter = list(MATERIAL_STEEL = 20)
 	var/sticker = null
 	var/closed = TRUE
+	price_tag = 120
 
 /obj/item/storage/hcases/Destroy()
 
@@ -78,7 +79,7 @@
 	set src in view(1)
 
 	if(isghost(usr))
-		to_chat(usr, SPAN_NOTICE("The lid dosnt move even at your suggestion."))
+		to_chat(usr, SPAN_NOTICE("The lid doesn't move even at your suggestion."))
 		return
 
 	if(can_interact(usr) == 1)	//can't use right click verbs inside bags so only need to check for ablity
@@ -285,8 +286,9 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	exspand_when_spawned = FALSE //No exspanding cheats
 
 /obj/item/storage/hcases/ammo/scrap/outsider/populate_contents()
-	new /obj/random/gun_handmade/willspawn(src)
-	new /obj/item/device/lighting/toggleable/flashlight(src)
+// CFW - Remove clutter
+//	new /obj/random/gun_handmade/willspawn(src)
+//	new /obj/item/device/lighting/toggleable/flashlight(src)
 	new /obj/item/cell/small/high(src)
 	new /obj/item/cell/medium/high(src)
 	new /obj/item/ammo_kit(src)
@@ -515,10 +517,12 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	if(!stamped)
 		stamped = TRUE
 		var/list/options = list() // Moved the Galaxy to secondary selection
-		options["Osprey - precision rifle"] = list(/obj/item/gun/projectile/automatic/omnirifle/scoped/fancy,/obj/item/ammo_magazine/heavy_rifle_408,/obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408/rubber, /obj/item/storage/pouch/ammo)
+		options["Python - precision rifle"] = list(/obj/item/gun/projectile/automatic/mamba/python,/obj/item/ammo_magazine/heavy_rifle_408,/obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408/rubber, /obj/item/storage/pouch/ammo)
 		options["SWAT - combat shotgun"] = list(/obj/item/gun/projectile/shotgun/pump/swat, /obj/item/ammo_magazine/speed_loader_shotgun, /obj/item/ammo_magazine/speed_loader_shotgun, /obj/item/ammo_magazine/speed_loader_shotgun/beanbag, /obj/item/ammo_magazine/ammobox/c10x24_small, /obj/item/storage/pouch/tubular)
 		options["Ostwind - police carbine"] = list(/obj/item/gun/projectile/automatic/ostwind, /obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257, /obj/item/ammo_magazine/light_rifle_257/rubber/pepperball, /obj/item/storage/pouch/ammo)
 		options["Gleam - Assault Laser"] = list(/obj/item/gun/energy/lasercore/militia/blaster, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/storage/pouch/tubular)
+		options["Second Secondary"] = list(/obj/item/voucher/marshal/wosecondary)
+
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -546,6 +550,8 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 		options["\"Longarm\" - marksman rifle"] = list(/obj/item/gun/projectile/automatic/omnirifle/scoped, /obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408, /obj/item/ammo_magazine/heavy_rifle_408, /obj/item/storage/pouch/ammo)
 		options["\"Hustler\" - Breacher Shotgun"] = list(/obj/item/gun/projectile/automatic/omnirifle/hustler, /obj/item/ammo_magazine/sbaw, /obj/item/ammo_magazine/sbaw, /obj/item/ammo_magazine/sbaw, /obj/item/ammo_magazine/sbaw, /obj/item/ammo_magazine/sbaw, /obj/item/storage/pouch/ammo)
 		options["\"Gleam\" - Assault Laser"] = list(/obj/item/gun/energy/lasercore/militia/blaster, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/cell/medium/high, /obj/item/storage/pouch/tubular)
+		options["Second Secondary"] = list(/obj/item/voucher/blackshield/COsecondary)
+
 		var/choice = input(user,"What type of equipment?") as null|anything in options
 		if(src && choice)
 			var/list/things_to_spawn = options[choice]
@@ -708,7 +714,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/storage/hcases/ert/medical
 	name = "medical imprinter hard case"
-	desc = "A hardcase containing a number of advanced mental imprinters. This one bears the badge of the SRI medical division."
+	desc = "A hardcase containing a number of advanced mental imprinters. This one bears the badge of the SI medical division."
 	can_hold = list(/obj/item/device/mental_imprinter, /obj/item/device/mental_imprinter)
 
 /obj/item/storage/hcases/ert/medical/populate_contents()

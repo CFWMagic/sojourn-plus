@@ -34,11 +34,8 @@
 	desc = "An anomalous weapon created by an unknown person (or group?), their work marked by a blue cross, these items are known to vanish and reappear when left alone. \
 	The replication of a prized legendary royal shotgun wielded by a king that was once prophesized to have used it for their own undoing."
 	icon_state = "shotgun"
-	load_method = SINGLE_CASING|SPEEDLOADER
 	handle_casings = CYCLE_CASINGS
-	flags = CONDUCT
 	slot_flags = SLOT_BACK
-	caliber = CAL_SHOTGUN
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 10)
 	max_shells = 1
 	damage_multiplier = 2
@@ -345,7 +342,7 @@
 		list(mode_name="red", mode_desc="fires a red flare", projectile_type=/obj/item/projectile/bullet/flare, charge_cost = 50, icon="stun"),
 		list(mode_name="green", mode_desc="fires a green flare", projectile_type=/obj/item/projectile/bullet/flare/green, charge_cost = 50, icon="stun"),
 		list(mode_name="blue", mode_desc="fires a blue flare", projectile_type=/obj/item/projectile/bullet/flare/blue, charge_cost = 50, icon="stun"),
-		list(mode_name="wild", mode_desc="fires a random coloured flare", projectile_type=/obj/item/projectile/bullet/flare/choas, charge_cost = 10, icon="kill"),
+		list(mode_name="wild", mode_desc="fires a random coloured flare", projectile_type=/obj/item/projectile/bullet/flare/chaos, charge_cost = 10, icon="kill"),
 		list(mode_name="key", mode_desc="fires a random yellow flare", projectile_type=/obj/item/projectile/bullet/flare/yellow, charge_cost = 100, icon="kill"),
 		list(mode_name="thinner", mode_desc="fires a random colourless flare", projectile_type=/obj/item/projectile/bullet/flare/white, charge_cost = 200, icon="kill")
 	)
@@ -526,7 +523,7 @@
 	delay_adder = clamp(delay_adder, 0, 8)
 //	message_admins("2ogre: safty_math [safty_math] safty_health [safty_health]  delay_adder [delay_adder]")
 	real_mod += -safty_math
-	real_mod *= 0.5 //Insainly op
+	real_mod *= 0.5 //Insanely op
 
 //	message_admins("3ogre: safty_math [safty_math] safty_health [safty_health]  delay_adder [delay_adder]")
 //	message_admins("4ogre: armor_divisor [armor_divisor]")
@@ -692,7 +689,7 @@
 			able_to_use = TRUE
 		if(istype(H.get_organ(BP_R_ARM), /obj/item/organ/external/stump))
 			able_to_use = TRUE
-		//Robo *lim* bypasses needing only 1 arm, but having 2 robo lims cancle one another out
+		//Robo *lim* bypasses needing only 1 arm, but having 2 robo limbs cancle one another out
 		if(istype(H.get_organ(BP_L_ARM), /obj/item/organ/external/robotic))
 			robo_lim += 1
 		if(istype(H.get_organ(BP_R_ARM), /obj/item/organ/external/robotic))
@@ -755,7 +752,8 @@
 	armor_divisor = ARMOR_PEN_SHALLOW
 	price_tag = 2050
 	clickdelay_offset = 0
-	max_upgrades = 1//Already over powered.
+//	max_upgrades = 1//Already over powered.
+	max_upgrades = 3//24.12.05 CFW - No it isn't.
 	degradation = 0.1
 	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/expansion = TRUE)
 
@@ -771,7 +769,7 @@
 		current_health = 8
 	else
 		current_health = round(current_health)
-	current_health = clamp(current_health, -7, 5) //-1 from no bag means this can be in affect a 2 cooldown weapon. This is insainly good
+	current_health = clamp(current_health, -7, 5) //-1 from no bag means this can be in affect a 2 cooldown weapon. This is insanely good
 	clickdelay_offset = -current_health
 
 /obj/item/tool/scythe/spectral_harvester
@@ -999,5 +997,21 @@
 	stiffness = 0 //You are above the red tape
 	price_tag = 3500 //Silk and gold
 	//all its affects are in human_defense.dm
+
+/obj/item/clothing/shoes/crimsoncross_warp
+	name = "\"Warp\" Running shoes"
+	desc = "An anomalous clothing created by rivals of the unknown person(or group?) of the bluecross, their work marked by a crimson cross, these items are known to vanish and reappear when left alone. \
+	A pair of shoes that the more the wearer gets hurt the more charge it builds up. When running, they automatically spend charge to gain a speed boost. Walking doesn't use charge."
+	icon_state = "wcorp"
+	item_state = "wcorp"
+	var/harm_charge = 0
+	var/squeaking = 0
+	var/drain = 0
+
+/obj/item/clothing/shoes/crimsoncross_warp/examine(mob/user)
+	..()
+	if(ishuman(user))
+		if(user.stats.getPerk(PERK_NO_OBFUSCATION))
+			to_chat(user, SPAN_WARNING("The shoes have a charge rating of [harm_charge], last speedboost value was [squeaking]. Last charge use from running was [drain]."))
 
 //Tools and tool mods (these are for things not intended for fighting but for actual tools)

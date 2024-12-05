@@ -5,9 +5,9 @@
 	icon_state = "pouch"
 	item_state = "pouch"
 	price_tag = 100
-	cant_hold = list(/obj/item/storage/pouch) //Pouches in pouches was a misstake
+	cant_hold = list(/obj/item/storage/pouch) //Pouches in pouches was a misstake // CFW - No it wasn't.
 
-	w_class = ITEM_SIZE_TINY
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	slot_flags = SLOT_BELT //Pouches can be worn on belt
 	storage_slots = 1
 	max_w_class = ITEM_SIZE_SMALL
@@ -68,7 +68,7 @@
 	//Cycle through are contents and find everything ever
 	for(var/obj/item/I in contents)
 		var/over_filled = 0 //Now we got to get what a REAL w-class is per object
-		over_filled = I.w_class + I.extra_bulk //Extrabulk for sake of calulations is insainly rough
+		over_filled = I.w_class + I.extra_bulk //Extrabulk for sake of calulations is insanely rough
 		used_storage_space += over_filled
 		if(over_filled > w_class) //If we are item is bigger then are pouch then we get get bigger!
 			internal_bulk += over_filled - w_class
@@ -79,15 +79,17 @@
 		//This **LOOKS** harsh but its not, unlike w_class these are lineral numbers not mulitied by silly hidden things
 		switch(free_space_percent)
 			if(0 to 25)
-				internal_bulk += 1
+				internal_bulk += 0 //1
 			if(25 to 50)
-				internal_bulk += 1.5
+				internal_bulk += 0 //1.5
 			if(50 to 75)
-				internal_bulk += 2
+				internal_bulk += 0 //2
 			if(75 to INFINITY)
-				internal_bulk += 2.5
+				internal_bulk += 0 //2.5
 
-	extra_bulk = internal_bulk + plus_extra_bulk //This scaling means that if you mix in a-ok items with a few over-big ones they are not all stacking their mauls
+//	extra_bulk = internal_bulk + plus_extra_bulk //This scaling means that if you mix in a-ok items with a few over-big ones they are not all stacking their mauls
+// 24.12.05 CFW - Disable pouch size changes
+	extra_bulk = 0
 	if(extra_bulk < 0)
 		extra_bulk = 0
 	if(istype(loc, /obj/item/storage))
@@ -127,11 +129,12 @@
 	icon_state = "medium_generic"
 	item_state = "medium_generic"
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_SMALL_STORAGE
+	max_storage_space = DEFAULT_NORMAL_STORAGE // DEFAULT_SMALL_STORAGE
 	max_w_class = ITEM_SIZE_NORMAL
 	price_tag = 400
 	level = BELOW_PLATING_LEVEL //As we can
-	plus_extra_bulk = 1 //Anti-quatom scaling with smaller items
+	cant_hold = list(/obj/item/storage/pouch/medium_generic) //Can't hold itself
+//	plus_extra_bulk = 1 //Anti-quatom scaling with smaller items
 
 /obj/item/storage/pouch/medium_generic/leather
 	icon_state = "medium_leather"
@@ -147,7 +150,7 @@
 //We do medium for scaling reasons
 /obj/item/storage/pouch/medium_generic/psionic
 	name = "Woven Pouch C-7v89"
-	desc = "A small on the outside experimental hand bag only useable for psionic users."
+	desc = "A small on the outside experimental hand bag only usable for psionic users."
 	icon_state = "medium_psion"
 	item_state = "medium_generic"
 	storage_slots = null //Uses generic capacity
@@ -161,7 +164,7 @@
 	var/psionic_storage = 5
 	var/repression = TRUE
 	cant_hold = list(/obj/item/storage/pouch, /obj/item/device/psionic_catalyst)
-	plus_extra_bulk = 30 //Heavily limited in putting it in modular storage
+//	plus_extra_bulk = 30 //Heavily limited in putting it in modular storage
 
 /obj/item/storage/pouch/medium_generic/psionic/verb/toggle_repression()
 	set name = "Toggle Storage Repression"
@@ -177,7 +180,7 @@
 		return
 	repression = !repression
 	psionic_tune()
-	to_chat(usr, SPAN_NOTICE("Repression: [repression ? "Actived" : "Deactived"] "))
+	to_chat(usr, SPAN_NOTICE("Repression: [repression ? "Activated" : "Deactivated"] "))
 
 
 /obj/item/storage/pouch/medium_generic/psionic/pouch_size_increase()
@@ -200,7 +203,7 @@
 		if(psionic_scaling_mult < 1.5)
 			psionic_scaling_mult += 0.1
 			used = TRUE
-			to_chat(user, "It seems a little easyer to use your maxium psionic pool to increase the [src] space.")
+			to_chat(user, "It seems a little easier to use your maxium psionic pool to increase the [src] space.")
 
 		if(psionic_storage < 15 && !used)
 			psionic_storage += 1
@@ -232,7 +235,7 @@
 			//Basically every psionic point is a "tiny item of space"
 			//Normal pouches DEFAULT_SMALL_STORAGE, aka 10 according to __DEFINES/inventory_sizes.dm
 			//10 psionic points MATCHES small pouches, aka 100 cog.
-			//Now thats insainly bad and unfun so we do a bit of safty netting, aka the MINIUM you can have is a small pouch
+			//Now thats insanely bad and unfun so we do a bit of safty netting, aka the MINIUM you can have is a small pouch
 			//First we eat cubes upto a max of 10, for at lest 1 medium pouch
 			//Second After that we just increase the cap endlessly
 			max_storage_space = round(PT.max_psi_points * psionic_scaling_mult) + psionic_storage
@@ -266,11 +269,12 @@
 	w_class = ITEM_SIZE_BULKY //This is like a second satchle, is this size for belt/box ect nesting tricks
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_NORMAL_STORAGE
+	max_storage_space = DEFAULT_BULKY_STRAGE //DEFAULT_NORMAL_STORAGE
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_BIOMATTER = 20)
 	price_tag = 800
-	plus_extra_bulk = 6 //Anti-quatom scaling with smaller items
+	cant_hold = list() //Can hold pouches
+//	plus_extra_bulk = 6 //Anti-quatom scaling with smaller items
 
 obj/item/storage/pouch/large_generic/advmedic
 	desc = "A mini satchel. Can hold a fair bit, but it won't fit in your pocket. This one is well worn and reeks like the inside of a frontier-chemlab."
@@ -370,8 +374,8 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	icon_state = "engineering_supply"
 	item_state = "engineering_supply"
 
-	storage_slots = 3
-	w_class = ITEM_SIZE_TINY
+	storage_slots = 4 //3
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -401,7 +405,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	item_state = "janitor_supply"
 
 	storage_slots = 4
-	w_class = ITEM_SIZE_TINY
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -420,8 +424,8 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	icon_state = "ammo"
 	item_state = "ammo"
 
-	storage_slots = 4
-	w_class = ITEM_SIZE_TINY
+	storage_slots = 7 //4
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -436,7 +440,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	item_state = "flare"
 
 	storage_slots = 7
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NOWMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -486,7 +490,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	item_state = "grow"
 	matter = list(MATERIAL_PLASTIC = 1)
 	storage_slots = 7
-	w_class = ITEM_SIZE_TINY
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	max_w_class = ITEM_SIZE_TINY
 
 	can_hold = list(
@@ -515,7 +519,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	item_state = "pistol_holster"
 
 	storage_slots = 1
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 	plus_extra_bulk = -1
 
@@ -638,10 +642,10 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	matter = list(MATERIAL_BIOMATTER = 10)
 	storage_slots = 4 // 12 arrows
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 	sliding_behavior = TRUE // It is by default a quickdraw quiver
-	plus_extra_bulk = -2
+//	plus_extra_bulk = -2
 
 	can_hold = list(
 		/obj/item/ammo_casing/arrow,
@@ -681,10 +685,10 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	matter = list(MATERIAL_BIOMATTER = 15) // Can hold a full stack of rods.
 	storage_slots = 4
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_BULKY // Just in case a full stack won't fit.
 	sliding_behavior = TRUE // Quickdraw!
-	plus_extra_bulk = -2
+//	plus_extra_bulk = -2
 
 	can_hold = list(
 		/obj/item/stack/rods,

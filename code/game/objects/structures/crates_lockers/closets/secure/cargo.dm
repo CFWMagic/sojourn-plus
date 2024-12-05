@@ -5,6 +5,9 @@
 	icon_state = "cargo"
 
 /obj/structure/closet/secure_closet/personal/cargotech/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	new /obj/item/clothing/under/rank/cargotech(src)
 	new /obj/item/clothing/shoes/color/black(src)
 	new /obj/item/device/radio/headset/headset_cargo(src)
@@ -75,11 +78,23 @@
 	icon_state = "qm"
 
 /obj/structure/closet/secure_closet/reinforced/quartermaster/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
+	if(prob(30))
+		new /obj/item/storage/backpack/satchel/industrial(src)
+	else if(prob(50))
+		new /obj/item/storage/backpack/industrial(src)
+	else if(prob(50))
+		new /obj/item/storage/backpack/duffelbag(src)
+	else if(prob(75))
+		new /obj/item/storage/backpack/military(src)
+	else
+		new /obj/item/storage/backpack/holding(src)
 	new /obj/item/clothing/under/rank/cargotech(src)
 	new /obj/item/clothing/shoes/color/brown(src)
 	new /obj/item/device/radio/headset/headset_cargo(src)
 	new /obj/item/clothing/gloves/thick(src)
-	new /obj/item/clothing/suit/fire(src)
 	new /obj/item/clothing/accessory/halfcape/som(src)
 	new /obj/item/tank/emergency_oxygen(src)
 	new /obj/item/clothing/mask/gas(src)
@@ -89,9 +104,13 @@
 	new /obj/item/gun/projectile/revolver/little_comet(src)
 	new /obj/item/gun_upgrade/mechanism/glass_widow(src)
 	new /obj/item/ammo_magazine/ammobox/pistol_35(src)
+	new /obj/item/ammo_magazine/speed_loader_pistol_35(src)
 	new /obj/item/ammo_magazine/ammobox/pistol_35/rubber(src)
+	new /obj/item/ammo_magazine/speed_loader_pistol_35/rubber(src)
 	new /obj/item/stack/os_cash/random(src)
 	new /obj/item/direct_line(src)
+	new /obj/item/tool/omnitool(src)
+	new /obj/item/computer_hardware/hard_drive/portable/design/cargo(src)
 
 //Prospector gear, you'll notice it is immensely heavily randomized, this is intentional to add some replayibility to prospector starts.
 //To anyone editing this, I advise using if statements over switch to better have control of what loot spawns, it rolls each in order of success so you can better set the odds.
@@ -116,6 +135,9 @@
 	armor_cache = pickweight(list("BASIC_A" = 16, "BULLET_A" = 4, "EGUN_A" = 4, "MELEE_A" = 4))
 
 /obj/structure/closet/secure_closet/personal/prospector/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	gain_rng()
 
 	new /obj/item/device/radio/headset/headset_pro(src)
@@ -348,6 +370,9 @@
 	armor_cache = pickweight(list("BASIC_A" = 12, "BULLET_A" = 4, "EGUN_A" = 4, "MELEE_A" = 8))
 
 /obj/structure/closet/secure_closet/personal/salvager/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	gain_rng()
 
 	new /obj/item/device/radio/headset/headset_pro(src)
@@ -570,6 +595,9 @@
 	armor_cache = pickweight(list("BASIC_A" = 12, "BULLET_A" = 4, "EGUN_A" = 4, "MELEE_A" = 8))
 
 /obj/structure/closet/secure_closet/reinforced/foreman/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	gain_rng()
 
 	new /obj/item/device/radio/headset/heads/foreman(src)
@@ -696,6 +724,9 @@
 	icon_state = "fence"
 
 /obj/structure/closet/secure_closet/reinforced/foreman/fence/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	new /obj/item/clothing/suit/storage/scavengerarmor(src)
 	new /obj/item/clothing/head/helmet/handmade/scavengerhelmet(src)
 	new /obj/item/gun/projectile/automatic/vector(src)
@@ -717,6 +748,9 @@
 	icon_state = "cargo"
 
 /obj/structure/closet/secure_closet/personal/artist/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	new /obj/item/clothing/suit/artist(src)
 	new /obj/item/clothing/under/rank/artist(src)
 	new /obj/item/clothing/suit/artist(src)
@@ -732,6 +766,9 @@
 /obj/structure/closet/wardrobe/color/pink/artist
 
 /obj/structure/closet/wardrobe/color/pink/artist/populate_contents()
+	if(populated_contents)
+		return
+	populated_contents = TRUE
 	//new/obj/item/clothing/under/mime(src)
 	new/obj/item/clothing/shoes/color/black(src)
 	new/obj/item/clothing/gloves/color/white(src)
