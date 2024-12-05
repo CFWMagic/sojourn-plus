@@ -21,8 +21,8 @@
 	disallow_species = list(FORM_SOTSYNTH, FORM_AGSYNTH, FORM_BSSYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	ideal_character_age = 40
-	minimum_character_age = 25
-	playtimerequired = 1200
+//	minimum_character_age = 25
+//	playtimerequired = 1200
 	health_modifier = 5
 
 	stat_modifiers = list(

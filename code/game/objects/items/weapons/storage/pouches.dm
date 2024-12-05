@@ -102,7 +102,7 @@
 	icon_state = "small_generic"
 	item_state = "small_generic"
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_SMALL_STORAGE * 0.5
+	max_storage_space = DEFAULT_SMALL_STORAGE * 0.6 //DEFAULT_SMALL_STORAGE * 0.5
 	max_w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_BIOMATTER = 5)
 	level = BELOW_PLATING_LEVEL //We can hide under tiles :D

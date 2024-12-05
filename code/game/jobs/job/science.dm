@@ -16,7 +16,7 @@
 
 
 	outfit_type = /decl/hierarchy/outfit/job/science/rd
-	playtimerequired = 1200
+//	playtimerequired = 1200
 	access = list(
 		access_rd, access_heads, access_tox, access_genetics, access_morgue,
 		access_tox_storage, access_teleporter, access_sec_doors,
@@ -25,7 +25,7 @@
 		access_RC_announce, access_keycard_auth, access_tcomsat, access_gateway, access_xenoarch, access_network, access_maint_tunnels, access_research_equipment
 	)
 	ideal_character_age = 40
-	minimum_character_age = 25
+//	minimum_character_age = 25
 
 	stat_modifiers = list(
 		STAT_MEC = 25,

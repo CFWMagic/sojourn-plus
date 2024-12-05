@@ -14,11 +14,11 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	difficulty = "Very Hard."
 	selection_color = "#ccccff"
 	req_admin_notify = 1
-	playtimerequired = 2500
+//	playtimerequired = 2500
 	wage = WAGE_COMMAND
 
 	ideal_character_age = 50 // Old geezer captains ftw
-	minimum_character_age = 30
+//	minimum_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/captain
 
 	perks = list(PERK_SOMELLIER)
@@ -83,7 +83,7 @@ Treat your command officers with respect and listen to their council. Try not to
 	playtimerequired = 1200
 	wage = WAGE_COMMAND
 	ideal_character_age = 35
-	minimum_character_age = 25
+//	minimum_character_age = 25
 
 	health_modifier = 5
 	description = "The Steward is the loyal right-hand of the Premier. Serving as a personal guard, follow them wherever they go.<br>\

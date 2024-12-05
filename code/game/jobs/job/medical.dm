@@ -24,8 +24,8 @@
 	)
 
 	ideal_character_age = 40
-	minimum_character_age = 30
-	playtimerequired = 1200
+//	minimum_character_age = 30
+//	playtimerequired = 1200
 
 	stat_modifiers = list(
 		STAT_BIO = 50,
@@ -71,12 +71,12 @@
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
-	minimum_character_age = 25
+//	minimum_character_age = 25
 	alt_titles = list("Soteria Nurse"=/decl/hierarchy/outfit/job/medical/doctor/medNurse, "Soteria Emergency Physician"=/decl/hierarchy/outfit/job/medical/doctor/medERPhys, "Soteria Surgeon"=/decl/hierarchy/outfit/job/medical/doctor/medSurgeon, "Soteria Chemist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	department_account_access = TRUE
 	disallow_species = list(FORM_AGSYNTH, FORM_BSSYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
-	playtimerequired = 240 //4 hours
+//	playtimerequired = 240 //4 hours
 
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology,
@@ -119,7 +119,7 @@
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
 	wage = WAGE_PROFESSIONAL
-	minimum_character_age = 20
+//	minimum_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor/medStudent
 	department_account_access = TRUE
 	disallow_species = list(FORM_AGSYNTH, FORM_BSSYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)

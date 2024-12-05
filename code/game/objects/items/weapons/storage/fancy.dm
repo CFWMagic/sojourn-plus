@@ -169,7 +169,7 @@ obj/item/storage/fancy/dogtreats/populate_contents()
 	w_class = ITEM_SIZE_TINY
 	throwforce = WEAPON_FORCE_HARMLESS
 	slot_flags = SLOT_BELT
-	storage_slots = 6
+	storage_slots = 21 //6
 	can_hold = list(/obj/item/clothing/mask/smokable/cigarette, /obj/item/flame/lighter)
 	icon_type = "cigarette"
 	reagent_flags = REFILLABLE | NO_REACT
