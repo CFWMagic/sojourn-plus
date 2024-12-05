@@ -1,8 +1,8 @@
 /datum/craft_recipe/guild
-	category = "Guild"
+	category = "Engineering"
 	time = 100
 	related_stats = list(STAT_MEC)
-	requiredPerk = PERK_HANDYMAN
+//	requiredPerk = PERK_HANDYMAN
 
 //Materal Craft ------------------
 
