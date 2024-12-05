@@ -113,6 +113,34 @@
 	volume = 50
 	preloaded_reagents = list("cleaner" = 50)
 
+/obj/item/reagent_containers/spray/cleaner/admin
+	name = "space cleaner"
+	desc = "BLAM!-brand non-foaming space cleaner!"
+	volume = 100000
+	preloaded_reagents = list("cleaner" = 100000)
+	throwforce = 3
+	var/range = 7
+
+/obj/item/reagent_containers/spray/cleaner/admin/Spray_at(atom/A as mob|obj)
+	var/direction = get_dir(src, A)
+	var/turf/T = get_turf(A)
+	var/turf/T1 = get_step(T,turn(direction, 90))
+	var/turf/T2 = get_step(T,turn(direction, -90))
+	var/list/the_targets = list(T, T1, T2)
+
+	for(var/a = 1 to 3)
+		spawn(0)
+			if(reagents.total_volume < 1) break
+			var/obj/effect/effect/water/chempuff/D = new/obj/effect/effect/water/chempuff(get_turf(src))
+			var/turf/my_target = the_targets[a]
+			D.create_reagents(amount_per_transfer_from_this)
+			if(!src)
+				return
+			reagents.trans_to_obj(D, amount_per_transfer_from_this)
+			D.set_color()
+			D.set_up(my_target, range, 2)
+	return
+
 /obj/item/reagent_containers/spray/sterilizine
 	name = "sterilizine"
 	desc = "Great for hiding incriminating bloodstains and sterilizing scalpels."
