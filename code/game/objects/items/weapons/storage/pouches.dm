@@ -129,7 +129,7 @@
 	icon_state = "medium_generic"
 	item_state = "medium_generic"
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_NORMAL_STORAGE // DEFAULT_SMALL_STORAGE
+	max_storage_space = DEFAULT_SMALL_STORAGE
 	max_w_class = ITEM_SIZE_NORMAL
 	price_tag = 400
 	level = BELOW_PLATING_LEVEL //As we can
@@ -269,7 +269,7 @@
 	w_class = ITEM_SIZE_BULKY //This is like a second satchle, is this size for belt/box ect nesting tricks
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_BULKY_STORAGE //DEFAULT_NORMAL_STORAGE
+	max_storage_space = DEFAULT_NORMAL_STORAGE
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_BIOMATTER = 20)
 	price_tag = 800

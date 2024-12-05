@@ -13,7 +13,7 @@
 /////////////Standard/////////////
 /obj/item/ammo_magazine/pistol_35
 	name = "standard magazine (9mm)"
-	desc = "a 10 round magazine marked for 9mm."
+	desc = "a 15 round magazine marked for 9mm."
 	icon_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -21,7 +21,7 @@
 	matter = list(MATERIAL_STEEL = 3)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
-	max_ammo = 10
+	max_ammo = 15 //10
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/pistol_35/empty
@@ -64,7 +64,7 @@
 /obj/item/ammo_magazine/highcap_pistol_35/drum
 	name = "standard auto drum magazine"
 	icon_state = "ldrum"
-	desc = "A 71 round drum magazine marked for 9mm."
+	desc = "A 50 round drum magazine marked for 9mm."
 	origin_tech = list(TECH_COMBAT = 2)
 	w_class = ITEM_SIZE_NORMAL
 	mag_type = MAGAZINE
@@ -72,7 +72,7 @@
 	caliber = CAL_PISTOL
 	matter = list(MATERIAL_STEEL = 4)
 	ammo_type = /obj/item/ammo_casing/pistol_35
-	max_ammo = 71
+	max_ammo = 50 //71
 	multiple_sprites = FALSE //I guess?
 
 /obj/item/ammo_magazine/highcap_pistol_35/drum/update_icon()
@@ -117,7 +117,7 @@
 /////////////HighCap/////////////
 /obj/item/ammo_magazine/highcap_pistol_35
 	name = "highcap pistol magazine"
-	desc = "A 16 round magazine marked for 9mm."
+	desc = "A 20 round magazine marked for 9mm."
 	icon_state = "hpistol"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -125,7 +125,7 @@
 	matter = list(MATERIAL_STEEL = 3)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
-	max_ammo = 16
+	max_ammo = 20 //16
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/highcap_pistol_35/empty
@@ -161,7 +161,7 @@
 
 /obj/item/ammo_magazine/smg_35
 	name = "smg magazine"
-	desc = "A 32 round magazine marked for 9mm."
+	desc = "A 30 round magazine marked for 9mm."
 	icon_state = "smg"
 	ammo_color = "-l"
 	origin_tech = list(TECH_COMBAT = 2)
@@ -170,7 +170,7 @@
 	matter = list(MATERIAL_STEEL = 4)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
-	max_ammo = 32
+	max_ammo = 30 //32
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/smg_35/empty
@@ -217,14 +217,14 @@
 
 /obj/item/ammo_magazine/magnum_40
 	name = "magnum pistol magazine"
-	desc = "A 10 round magazine marked for 10mm Magnum."
+	desc = "A 12 round magazine marked for 10mm Magnum."
 	icon_state = "magnum"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
 	ammo_type = /obj/item/ammo_casing/magnum_40
 	matter = list(MATERIAL_STEEL = 4)
 	caliber = CAL_MAGNUM
-	max_ammo = 10
+	max_ammo = 12 //10
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/magnum_40/empty
@@ -455,7 +455,7 @@
 
 /obj/item/ammo_magazine/rifle_75
 	name = "rifle magazine"
-	desc = "A 20 round magazine marked for 7.62mm Rifle."
+	desc = "A 30 round magazine marked for 7.62mm Rifle."
 	icon_state = "rifle"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
@@ -463,7 +463,7 @@
 	caliber = CAL_RIFLE
 	matter = list(MATERIAL_STEEL = 5)
 	ammo_type = /obj/item/ammo_casing/rifle_75
-	max_ammo = 20
+	max_ammo = 30 //20
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/rifle_75/empty
@@ -502,7 +502,7 @@
 
 /obj/item/ammo_magazine/rifle_75_short
 	name = "short rifle magazine"
-	desc = "A 10 round magazine marked for 7.62mm Rifle."
+	desc = "A 20 round magazine marked for 7.62mm Rifle."
 	icon_state = "rifle_short"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
@@ -510,7 +510,7 @@
 	caliber = CAL_RIFLE
 	matter = list(MATERIAL_STEEL = 5)
 	ammo_type = /obj/item/ammo_casing/rifle_75
-	max_ammo = 10
+	max_ammo = 20 //10
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/rifle_75_short/empty
@@ -541,7 +541,7 @@
 
 /obj/item/ammo_magazine/rifle_75_drum
 	name = "rifle drum magazine"
-	desc = "A 40 round drum magazine marked for 7.62mm Rifle."
+	desc = "A 75 round drum magazine marked for 7.62mm Rifle."
 	icon_state = "rifle_drum"
 	w_class = ITEM_SIZE_NORMAL
 	mag_type = MAGAZINE
@@ -550,7 +550,7 @@
 	caliber = CAL_RIFLE
 	matter = list(MATERIAL_STEEL = 12)
 	ammo_type = /obj/item/ammo_casing/rifle_75
-	max_ammo = 40
+	max_ammo = 75 //40
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/rifle_75_drum/empty
@@ -649,8 +649,8 @@
 
 /obj/item/ammo_magazine/rifle_75_linked_box/heavy_rifle_408
 	name = "linked ammunition box (8.6mm Heavy Rifle)"
-	desc = "A 64 round linked box marked for 8.6x70mm Heavy Rifle."
-	max_ammo = 64
+	desc = "A 100 round linked box marked for 8.6x70mm Heavy Rifle."
+	max_ammo = 100 //64
 	icon_state = "pkh_box"
 	caliber = CAL_HRIFLE
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
@@ -676,14 +676,14 @@
 
 /obj/item/ammo_magazine/maxim_75
 	name = "pan magazine (7.62mm Rifle)"
-	desc = "A 96 round pan magazine marked for 7.62mm Rifle."
+	desc = "A 100 round pan magazine marked for 7.62mm Rifle."
 	icon_state = "maxim"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PAN
 	caliber = CAL_RIFLE
 	matter = list(MATERIAL_STEEL = 2)
 	ammo_type = /obj/item/ammo_casing/rifle_75
-	max_ammo = 96
+	max_ammo = 100 //96
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/maxim_75/empty
@@ -694,7 +694,7 @@
 /obj/item/ammo_magazine/heavy_rifle_408
 	name = "heavy rifle magazine"
 	icon_state = "hrifle"
-	desc = "A 14 round magazine marked for 8.6x70mm Heavy Rifle."
+	desc = "A 20 round magazine marked for 8.6x70mm Heavy Rifle."
 	origin_tech = list(TECH_COMBAT = 2)
 	w_class = ITEM_SIZE_NORMAL
 	mag_type = MAGAZINE
@@ -702,7 +702,7 @@
 	caliber = CAL_HRIFLE
 	matter = list(MATERIAL_STEEL = 4)
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
-	max_ammo = 14
+	max_ammo = 20 //14
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/heavy_rifle_408/empty
@@ -740,7 +740,7 @@
 /obj/item/ammo_magazine/heavy_rifle_408_drum
 	name = "heavy rifle drum magazine (ball)"
 	icon_state = "hdrum"
-	desc = "A 36 round drum magazine marked for 8.6x70mm Heavy Rifle."
+	desc = "A 50 round drum magazine marked for 8.6x70mm Heavy Rifle."
 	origin_tech = list(TECH_COMBAT = 2)
 	w_class = ITEM_SIZE_NORMAL
 	mag_type = MAGAZINE
@@ -748,7 +748,7 @@
 	caliber = CAL_HRIFLE
 	matter = list(MATERIAL_STEEL = 12)
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
-	max_ammo = 36
+	max_ammo = 50 //36
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/heavy_rifle_408_drum/lethal
@@ -788,7 +788,7 @@
 	caliber = "10x24"
 	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
 	ammo_type = /obj/item/ammo_casing/c10x24
-	max_ammo = 99
+	max_ammo = 100 //99
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/c10x24/empty
@@ -811,7 +811,7 @@
 
 /obj/item/ammo_magazine/kurtz_50
 	name = "heavy pistol magazine"
-	desc = "A 7 round magazine marked for 12mm."
+	desc = "A 10 round magazine marked for 12mm."
 	icon_state = "kurtz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -819,7 +819,7 @@
 	caliber = CAL_50
 	matter = list(MATERIAL_STEEL = 4)
 	ammo_type = /obj/item/ammo_casing/kurtz_50
-	max_ammo = 7
+	max_ammo = 10 //7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/kurtz_50/empty
@@ -864,6 +864,7 @@
 	matter = list(MATERIAL_STEEL = 3)
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 6
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_pistol_35/update_icon()
 	cut_overlays()
@@ -907,6 +908,7 @@
 	ammo_type = /obj/item/ammo_casing/magnum_40
 	matter = list(MATERIAL_STEEL = 3)
 	max_ammo = 6
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_magnum_40/update_icon()
 	cut_overlays()
@@ -958,6 +960,7 @@
 	ammo_type = /obj/item/ammo_casing/kurtz_50
 	matter = list(MATERIAL_STEEL = 3)
 	max_ammo = 5
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_kurtz_50/update_icon()
 	cut_overlays()
@@ -997,6 +1000,7 @@
 	matter = list(MATERIAL_STEEL = 1)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 10
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_rifle_75/update_icon()
 	cut_overlays()
@@ -1022,6 +1026,7 @@
 	matter = list(MATERIAL_STEEL = 1)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 10
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_light_rifle_257/update_icon()
 	cut_overlays()
@@ -1047,6 +1052,7 @@
 	matter = list(MATERIAL_STEEL = 1)
 	ammo_type = /obj/item/ammo_casing/heavy_rifle_408
 	max_ammo = 10
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_heavy_rifle_408/update_icon()
 	cut_overlays()
@@ -1074,6 +1080,7 @@
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTIC = 2)
 	max_ammo = 6
 	multiple_sprites = 1
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/ammo_magazine/speed_loader_shotgun/empty
 	name = "20mm loader tube (shells)"
@@ -1108,10 +1115,11 @@
 	matter = list(MATERIAL_STEEL = 2)
 	max_ammo = 8
 	multiple_sprites = 1
+	w_class = ITEM_SIZE_TINY
 /*
 /obj/item/ammo_magazine/a75
 	name = "ammo magazine (19mm gyro)"
-	desc = "A 4 magazine in 19mm gyro."
+	desc = "A 7 round magazine in 19mm gyro."
 	icon_state = "gyropistol"
 	icon = 'icons/obj/ammo_mags.dmi'
 	mag_type = MAGAZINE
@@ -1119,7 +1127,7 @@
 	caliber = CAL_70
 	ammo_type = /obj/item/ammo_casing/a75
 	multiple_sprites = 1
-	max_ammo = 4
+	max_ammo = 7 //4
 
 /obj/item/ammo_magazine/a75/empty
 	initial_ammo = 0
@@ -1136,7 +1144,7 @@
 	caliber = CAL_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun
 	matter = list(MATERIAL_STEEL = 2)
-	max_ammo = 12 //back to twelve, rest in peace chud, if anyone uses "realism" IRL drums also use 12 majority of time
+	max_ammo = 20 // 12
 	ammo_color = "-hv"
 
 /obj/item/ammo_magazine/m12/update_icon()
@@ -1168,14 +1176,14 @@
 
 /obj/item/ammo_magazine/sbaw
 	name = "20mm SBAW magazine (sabot slug)"
-	desc = "An 8 round magazine for 20mm shotgun shells."
+	desc = "A 10 round magazine for 20mm shotgun shells."
 	icon_state = "sbaw_s"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun
 	multiple_sprites = 1
-	max_ammo = 8 //Normal for detachable stick mags in shotguns / largest saiga has anyway
+	max_ammo = 10 //8
 
 /obj/item/ammo_magazine/sbaw/empty
 	name = "20mm SBAW magazine"
