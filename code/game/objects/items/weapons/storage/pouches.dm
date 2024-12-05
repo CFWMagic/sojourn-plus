@@ -269,7 +269,7 @@
 	w_class = ITEM_SIZE_BULKY //This is like a second satchle, is this size for belt/box ect nesting tricks
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	storage_slots = null //Uses generic capacity
-	max_storage_space = DEFAULT_BULKY_STRAGE //DEFAULT_NORMAL_STORAGE
+	max_storage_space = DEFAULT_BULKY_STORAGE //DEFAULT_NORMAL_STORAGE
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_BIOMATTER = 20)
 	price_tag = 800
@@ -440,7 +440,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	item_state = "flare"
 
 	storage_slots = 7
-	w_class = ITEM_SIZE_NOWMAL //ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
