@@ -51,8 +51,8 @@ var/global/list/default_medbay_channels = list(
 	var/subspace_transmission = FALSE
 	var/subspace_switchable = TRUE //FALSE
 	var/loudspeaker = FALSE
-	var/loudspeaker_switchable = FALSE
-	var/adhoc_fallback = FALSE
+	var/loudspeaker_switchable = TRUE //FALSE
+	var/adhoc_fallback = TRUE //FALSE
 	var/syndie = 0//Holder to see if it's a syndicate encrypted radio
 	var/list/transmit_levels  //List of z-levels it can transmit to without tcomms
 	var/multi_z_capable = TRUE //Whether it's able to transmit up/down in multi-Z areas

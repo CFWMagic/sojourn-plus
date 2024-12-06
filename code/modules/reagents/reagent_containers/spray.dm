@@ -114,8 +114,8 @@
 	preloaded_reagents = list("cleaner" = 50)
 
 /obj/item/reagent_containers/spray/cleaner/admin
-	name = "space cleaner"
-	desc = "BLAM!-brand non-foaming space cleaner!"
+	name = "industrial cleaner"
+	desc = "Industrial grade space cleaner."
 	volume = 100000
 	preloaded_reagents = list("cleaner" = 100000)
 	throwforce = 3

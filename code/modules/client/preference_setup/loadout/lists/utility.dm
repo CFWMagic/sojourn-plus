@@ -185,3 +185,8 @@
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0 //1 //Style at a cost! - also cardboard
 
+/datum/gear/utility/spray/cleaner/admin
+	display_name = "industrial cleaner"
+	path = /obj/item/reagent_containers/spray/cleaner/admin
+	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
