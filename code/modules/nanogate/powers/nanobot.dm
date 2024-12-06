@@ -160,7 +160,7 @@ List of powers in this page :
 
 	if(organ.Stand) // Do they have the bot?
 		if(organ.pay_power_cost(1))
-			to_chat(src, "You permanently assign some of your nanites to shape into a ham radio for communication.")
+			to_chat(src, "You permanently assign some of your nanites to shape into a radio for communication.")
 			organ.Stand.ai_flag |= RADIO_MODE
 			organ.organ_remove_verb(/mob/living/carbon/human/proc/radio_mode)
 			organ.Stand.updateDialog()

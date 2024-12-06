@@ -33,7 +33,7 @@ var/global/list/default_medbay_channels = list(
 
 /obj/item/device/radio
 	icon = 'icons/obj/radio.dmi'
-	name = "ham radio"
+	name = "military radio"
 	suffix = "\[3\]"
 	icon_state = "walkietalkie"
 	item_state = "walkietalkie"
@@ -49,7 +49,7 @@ var/global/list/default_medbay_channels = list(
 	var/listening = 1
 	var/list/channels = list() //see communications.dm for full list. First channel is a "default" for :h
 	var/subspace_transmission = FALSE
-	var/subspace_switchable = FALSE
+	var/subspace_switchable = TRUE //FALSE
 	var/loudspeaker = FALSE
 	var/loudspeaker_switchable = FALSE
 	var/adhoc_fallback = FALSE
