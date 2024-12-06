@@ -5,11 +5,15 @@
 	sort_category = "Utility belts"
 	cost = 0 //4
 
+/datum/gear/belt/multi
+	display_name = "multibelt, loaded"
+	path = /obj/item/storage/belt/multi/full
+	cost = 8 //2
+
 /datum/gear/belt/tool
 	display_name = "tool belt"
 	path = /obj/item/storage/belt/utility
 	cost = 1 //2
-
 
 /datum/gear/belt/sheath
 	display_name = "sheath for cheap blades"

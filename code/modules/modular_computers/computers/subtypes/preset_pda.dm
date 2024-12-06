@@ -161,6 +161,7 @@
 	hard_drive.store_file(new /datum/computer_file/program/cook_catalog())
 
 /obj/item/modular_computer/pda/military
+	name = "military PDA"
 	icon_state = "pda-military"
 	icon_state_unpowered = "pda-military"
 	hard_drive_type = /obj/item/computer_hardware/hard_drive/small/adv
@@ -173,7 +174,7 @@
 	..()
 	cell = new /obj/item/cell/small/greyson(src)
 	led = new /obj/item/computer_hardware/led/adv(src)
-	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
+//	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
 
 
 // PDA box

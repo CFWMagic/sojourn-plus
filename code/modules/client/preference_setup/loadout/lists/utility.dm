@@ -109,6 +109,11 @@
 	path = /obj/item/coin/silver
 	cost = 0
 
+/datum/gear/utility/hard_drive/portable/elite/military
+	display_name = "data disk, military"
+	path = /obj/item/computer_hardware/hard_drive/portable/elite/military
+	cost = 1
+
 /datum/gear/utility/pda/mlitary
 	display_name = "pda, military"
 	path = /obj/item/modular_computer/pda/military

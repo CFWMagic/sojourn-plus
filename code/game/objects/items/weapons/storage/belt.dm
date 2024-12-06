@@ -36,6 +36,18 @@
 		var/mob/M = src.loc
 		M.update_inv_belt()
 
+/obj/item/storage/belt/multi
+	name = "multibelt"
+
+/obj/item/storage/belt/multi/full/populate_contents()
+	new /obj/item/tool/hammer(src)
+	new /obj/item/tool/shovel(src)
+	new /obj/item/tool/weldingtool(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/tool/wirecutters/pliers(src)
+	new /obj/item/tool/saw(src)
+	new /obj/item/tool/multitool(src)
+
 /obj/item/storage/belt/sci
 	icon_state = "scibelt"
 	item_state = "scibelt"
