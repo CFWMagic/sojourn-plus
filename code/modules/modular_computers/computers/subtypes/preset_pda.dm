@@ -160,6 +160,21 @@
 	hard_drive.store_file(new /datum/computer_file/program/drink_catalog())
 	hard_drive.store_file(new /datum/computer_file/program/cook_catalog())
 
+/obj/item/modular_computer/pda/military
+	icon_state = "pda-military"
+	icon_state_unpowered = "pda-military"
+	hard_drive_type = /obj/item/computer_hardware/hard_drive/small/adv
+	processor_unit_type = /obj/item/computer_hardware/processor_unit/adv/small
+	network_card_type = /obj/item/computer_hardware/network_card/advanced
+	tesla_link_type = /obj/item/computer_hardware/tesla_link
+	scanner_type = /obj/item/computer_hardware/scanner/medical
+
+/obj/item/modular_computer/pda/military/install_default_hardware()
+	..()
+	cell = new /obj/item/cell/small/greyson(src)
+	led = new /obj/item/computer_hardware/led/adv(src)
+	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
+
 
 // PDA box
 /obj/item/storage/box/PDAs

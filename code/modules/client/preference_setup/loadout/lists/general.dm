@@ -7,19 +7,23 @@
 	display_name = "card game selection"
 	path = /obj/item/pack
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
 
 /datum/gear/cardpackstrad
 	display_name = "card traditional selection"
 	path = /obj/item/deck
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
 
 /datum/gear/c_bible
 	display_name = "christian bible"
 	path = /obj/item/book/manual/religion/c_bible
+	cost = 0
 
 /datum/gear/cardholder
 	display_name = "card holder"
 	path = /obj/item/cardholder
+	cost = 0
 
 /datum/gear/cigar
 	display_name = "cigar selection"
@@ -41,19 +45,23 @@
 /datum/gear/dice
 	display_name = "dice pack"
 	path = /obj/item/storage/pill_bottle/dice
+	cost = 0
 
 /datum/gear/flask
 	display_name = "flask"
 	path = /obj/item/reagent_containers/food/drinks/flask/barflask
+	cost = 0
 
 /datum/gear/h_book
 	display_name = "holy book"
 	path = /obj/item/book/manual/religion/h_book
+	cost = 0
 
 /datum/gear/mug
 	display_name = "mug selection"
 	path = /obj/item/reagent_containers/food/drinks/mug
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
 
 /datum/gear/psi_juice
 	display_name = "cerebrix inhaler"
@@ -70,10 +78,12 @@
 	display_name = "plushie selection"
 	path = /obj/item/toy/plushie
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
 
 /datum/gear/spaceball_pack
 	display_name = "spaceball booster pack"
 	path = /obj/item/pack/spaceball
+	cost = 0
 
 /datum/gear/implanter
 	display_name = "implanter (empty)"
@@ -107,12 +117,14 @@
 /datum/gear/photo_frame
 	display_name = "photograph frame"
 	path = /obj/item/toy/junk/photo_frame
+	cost = 0
 
 /datum/gear/taperecorder
 	display_name = "universal recorder"
 	path = /obj/item/device/taperecorder
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/wallet
 	display_name = "wallet"
 	path = /obj/item/storage/wallet
+	cost = 0

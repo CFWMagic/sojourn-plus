@@ -11,7 +11,7 @@
 /datum/gear/utility/briefcasesecure
 	display_name = "briefcase, secure"
 	path = /obj/item/storage/secure/briefcase
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/lunchbox
 	display_name = "lunch box"
@@ -77,17 +77,17 @@
 /datum/gear/utility/advancedlaptop
 	display_name = "laptop, advanced"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced/golden
-	cost = 4
+	cost = 3 //4
 
 /datum/gear/utility/normallaptop
-	display_name = "laptop, consumer"
+	display_name = "laptop, standard"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/standard/xenoware
 	cost = 2
 
 /datum/gear/utility/cheaplaptop
-	display_name = "laptop, military"
+	display_name = "laptop, basic"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/cheap/elbrus4kk
-	cost = 3
+	cost = 1 //3
 
 /datum/gear/utility/lighter
 	display_name = "lighter"
@@ -102,26 +102,32 @@
 /datum/gear/utility/paicard
 	display_name = "personal AI device"
 	path = /obj/item/device/paicard
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/utility/silvercoin
 	display_name = "silver coin"
 	path = /obj/item/coin/silver
 	cost = 0
 
+/datum/gear/utility/pda/mlitary
+	display_name = "pda, military"
+	path = /obj/item/modular_computer/pda/military
+	cost = 3
+
 /datum/gear/utility/tabletadvanced
 	display_name = "tablet computer, advanced"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/advanced
-	cost = 3
+	cost = 2 //3
 
 /datum/gear/utility/tabletcheap
 	display_name = "tablet computer, consumer"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/cheap
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/utility/wristmounted
 	display_name = "wristmounted computer"
 	path = /obj/item/modular_computer/wrist
+	cost = 0 //0
 
 /datum/gear/utility/tts
 	display_name = "tts device"
@@ -166,11 +172,11 @@
 /datum/gear/utility/tinfoil
 	display_name = "anti-psion hat"
 	path = /obj/item/clothing/head/psionic/tinfoil
-	cost = 1 //Has materas so its still a little bit of costs
+	cost = 0 //1 //Has materas so its still a little bit of costs
 
 /datum/gear/utility/costume
 	display_name = "costume kit"
 	path = /obj/item/storage/box/costume
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1 //Style at a cost! - also cardboard
+	cost = 0 //1 //Style at a cost! - also cardboard
 

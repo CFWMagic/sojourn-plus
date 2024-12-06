@@ -6,7 +6,7 @@
 	size = 0 // it is cloud based
 	requires_ntnet = 0
 	available_on_ntnet = FALSE // We don't have any antag that use it and we have a working tax program, we don't need to use it. -R4d6
-	usage_flags = PROGRAM_PDA
+	usage_flags = PROGRAM_ALL // PROGRAM_PDA
 	nanomodule_path = /datum/nano_module/program/uplink
 	var/authenticated = FALSE
 

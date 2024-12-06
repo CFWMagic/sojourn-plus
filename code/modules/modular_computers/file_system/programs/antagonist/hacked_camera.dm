@@ -6,7 +6,7 @@
 	program_key_state = "security_key"
 	program_menu_icon = "camera"
 	extended_desc = "This very advanced piece of software uses adaptive programming and a large database of cipherkeys to bypass most encryptions used on camera networks. Be warned that the system administrator may notice this."
-	size = 73 // Very large, a price for bypassing ID checks completely.
+	size = 64 //73 // Very large, a price for bypassing ID checks completely.
 	available_on_ntnet = 0
 	available_on_syndinet = 1
 

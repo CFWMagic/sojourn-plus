@@ -67,14 +67,14 @@
 	path = /obj/item/clothing/head/armor/helmet/penance
 	slot = slot_head
 	sort_category = "Xenowear"
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/xenowear/froghelm
 	display_name = "marqua helmet"
 	path = /obj/item/clothing/head/armor/helmet/frog
 	slot = slot_head
 	sort_category = "Xenowear"
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/xenowear/castellancapes
 	display_name = "kriosan cape selection"
@@ -96,14 +96,14 @@
 	slot = slot_wear_suit
 	flags = GEAR_HAS_TYPE_SELECTION
 	sort_category = "Xenowear"
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/factionsecurity/armoredcossackcoat
 	display_name = "jaeger hussar coat"
 	path = /obj/item/clothing/suit/greatcoat/cossackarmoredcoat
 	allowed_roles = list(JOBS_SECURITY, JOBS_BLACKSHIELD)
 	slot = slot_wear_suit
-	cost = 2
+	cost = 0 //2
 
 /datum/gear/xenowear/footwraps
 	display_name = "cloth footwraps"
@@ -184,7 +184,7 @@
 	path = /obj/item/clothing/shoes/jackboots/toeless
 	slot = slot_shoes
 	sort_category = "Xenowear"
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/xenowear/footwear
 	display_name = "barefoot footwear / (No sprite on mob) / (Change the name and desc)"
@@ -199,7 +199,7 @@
 	path = /obj/item/clothing/shoes/workboots/toeless
 	slot = slot_shoes
 	sort_category = "Xenowear"
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/xenowear/bugsocks
     display_name = "insect socks"

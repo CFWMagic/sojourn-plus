@@ -9,6 +9,9 @@
 	open_sound = 'sound/machines/click.ogg'
 	close_sound = 'sound/machines/click.ogg'
 	price_tag = 50
+	storage_capacity = 6 * MOB_MEDIUM //3x Storage
+	max_mob_size = 4 //2 more mobs then normal. Makes clearing mobs faster
+
 
 /obj/structure/closet/crate/close()
 	if(!src.opened)

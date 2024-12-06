@@ -11,6 +11,7 @@
 	path = /obj/item/clothing/shoes/track_shoes
 	slot = slot_shoes
 	sort_category = "Shoes and Footwear"
+	cost = 0
 
 /*
 /datum/gear/shoes/sneakers
@@ -93,7 +94,7 @@
 
 /datum/gear/shoes/render_boots
 	display_name = "lizardskin shoes"
-	cost = 2//somewhat armored
+	cost = 0 //2//somewhat armored
 	path =/obj/item/clothing/shoes/render
 
 /datum/gear/shoes/sandals

@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 	var/log_ooc = 0						// log OOC channel
 	var/log_access = 0					// log login/logout
 	var/log_say = 0						// log client say
-	var/fps = 40						// Exactly what it says on the tin. Client
+	var/fps = 60 //40						// Exactly what it says on the tin. Client
 	var/log_admin = 0					// log admin actions
 	var/log_debug = 1					// log debug output
 	var/log_game = 0					// log game events
@@ -77,7 +77,7 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 	var/character_slots = 10				// The number of available character slots
 	var/loadout_slots = 3					// The number of loadout slots per character
 
-	var/max_gear_cost = 10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
+	var/max_gear_cost = 20 //10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
 
 	var/max_maint_drones = 5				//This many drones can spawn,
 	var/allow_drone_spawn = 1				//assuming the admin allow them to.

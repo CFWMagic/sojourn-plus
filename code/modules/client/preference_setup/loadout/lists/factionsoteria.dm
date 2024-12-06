@@ -119,7 +119,7 @@
 	display_name = "surgical cap selection"
 	path = /obj/item/clothing/head/surgery/
 	allowed_roles = list("Soteria Psychiatrist","Soteria Lifeline Technician","Soteria Doctor","Chief Biolab Overseer", "Soteria Medical Resident")
-	cost = 1
+	cost = 0 //1
 	slot = slot_head
 	flags = GEAR_HAS_TYPE_SELECTION
 	sort_category = "Faction: Soteria"

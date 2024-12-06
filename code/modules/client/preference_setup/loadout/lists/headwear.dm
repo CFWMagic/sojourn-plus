@@ -34,7 +34,7 @@
 	display_name = "biker helmet selection"
 	path = /obj/item/clothing/head/helmet/biker
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 2 //Has some good armor
+	cost = 1 //2 //Has some good armor
 
 /datum/gear/head/boater
 	display_name = "boater hat"

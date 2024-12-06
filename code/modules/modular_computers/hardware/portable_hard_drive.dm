@@ -69,6 +69,27 @@
 		/datum/computer_file/program/coin_miner/disk //Fancy anticheat verson
 	)
 
+/obj/item/computer_hardware/hard_drive/portable/elite
+	name = "elite data disk"
+	desc = "A removable disk used to store enormous amounts of data."
+	icon_state = "onestar"
+	max_capacity = 1024
+	origin_tech = list(TECH_DATA = 4)
+	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 0.5, MATERIAL_PLATINUM = 1)
+	price_tag = 800
+
+/obj/item/computer_hardware/hard_drive/portable/elite/military
+	name = "military data disk"
+	icon_state = "onestar"
+	default_files = list(
+		/datum/computer_file/program/filemanager,
+		/datum/computer_file/program/access_decrypter,
+		/datum/computer_file/program/bootkit,
+		/datum/computer_file/program/ntnet_dos,
+		/datum/computer_file/program/camera_monitor/hacked,
+		/datum/computer_file/program/revelation
+	)
+
 /obj/item/computer_hardware/hard_drive/portable/Initialize()
 	. = ..()
 	w_class = ITEM_SIZE_SMALL

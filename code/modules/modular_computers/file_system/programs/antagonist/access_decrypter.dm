@@ -5,7 +5,7 @@
 	program_key_state = "security_key"
 	program_menu_icon = "lock-open"
 	extended_desc = "This highly advanced script can very slowly decrypt operational codes used in almost any network. These codes can be downloaded to an ID card to expand the available access. The system administrator will probably notice this."
-	size = 34
+	size = 32 //34
 	requires_ntnet = TRUE
 	available_on_ntnet = FALSE
 	available_on_syndinet = TRUE
@@ -15,7 +15,7 @@
 	var/progress = 0
 	var/target_progress = 300
 	var/datum/access/target_access = null
-	var/list/restricted_access_codes = list(access_change_ids, access_network) // access codes that are not hackable due to balance reasons
+	var/list/restricted_access_codes = null //list(access_change_ids, access_network) // access codes that are not hackable due to balance reasons
 
 /datum/computer_file/program/access_decrypter/kill_program(forced)
 	reset()

@@ -12,6 +12,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/cloakguildminer
 	display_name = "cloak, lonestar miner"
@@ -19,6 +20,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/cloakgm
 	display_name = "cloak, SOM"
@@ -26,6 +28,7 @@
 	allowed_roles = list("Surface Operations Manager")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/snowsuitguild
 	display_name = "snowsuit, lonestar"
@@ -33,6 +36,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/winterbootsguild
 	display_name = "winter boots, lonestar"
@@ -40,6 +44,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_shoes
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/winterbootsguildminer
 	display_name = "winter boots, lonestar miner"
@@ -47,6 +52,7 @@
 	allowed_roles = list("Lonestar Miner")
 	slot = slot_shoes
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/winterguild
 	display_name = "winter coat, lonestar"
@@ -54,6 +60,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar
 	display_name = "winter coat, lonestar miner"
@@ -61,6 +68,7 @@
 	allowed_roles = list("Lonestar Miner")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
+	cost = 0
 
 /datum/gear/factionlonestar/cargotech
 	display_name = "lonestar cargo uniform"
@@ -76,7 +84,7 @@
 	allowed_roles = list("Surface Operations Manager","Cargo Technician","Lonestar Miner","Bartender","Chef","Gardener","Janitor")
 	slot = slot_wear_suit
 	sort_category = "Faction: Lonestar"
-	cost = 1
+	cost = 0
 
 /datum/gear/factionlonestar/cargosoft
 	display_name = "lonestar cap"

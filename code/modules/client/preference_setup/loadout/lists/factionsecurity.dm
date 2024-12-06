@@ -98,7 +98,7 @@
 /datum/gear/factionsecurity/secglasses
 	display_name = "HUD Glasses"
 	path = /obj/item/clothing/glasses/sechud
-	cost = 2 //has flash protection
+	cost = 1 //2 //has flash protection
 
 /datum/gear/factionsecurity/security
 	display_name = "security HUD"
@@ -107,4 +107,4 @@
 /datum/gear/factionsecurity/security_tact
 	display_name = "tactical security HUD"
 	path = /obj/item/clothing/glasses/sechud/tactical
-	cost = 2 //has flash protection
+	cost = 1 //2 //has flash protection

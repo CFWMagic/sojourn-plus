@@ -26,7 +26,7 @@
 	path = /obj/item/clothing/mask/gas/artificer
 	sort_category = "Faction: Artificer"
 	slot = slot_wear_mask
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/factionartificer/guild_rebreather
 	display_name = "Artificer rebreather"
@@ -34,7 +34,7 @@
 	path = /obj/item/clothing/mask/gas/guild_rebreather
 	sort_category = "Faction: Artificer"
 	slot = slot_wear_mask
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/factionartificer/cloaktechnomancer
 	display_name = "cloak, artificer"

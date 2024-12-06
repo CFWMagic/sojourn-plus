@@ -2,7 +2,7 @@
 	display_name = "Welding Tool"
 	path = /obj/item/tool/weldingtool
 	sort_category = "Tools"
-	cost = 2
+	cost = 1 //2
 
 //------------
 
@@ -16,14 +16,14 @@
 /datum/gear/tools/wrench
 	display_name = "wrench"
 	path = /obj/item/tool/wrench
-	cost = 2
+	cost = 1 //2
 
 //------------
 
 /datum/gear/tools/wirecutters
 	display_name = "wire cutters"
 	path = /obj/item/tool/wirecutters
-	cost = 2
+	cost = 1 //2
 
 //------------
 
@@ -31,26 +31,26 @@
 /datum/gear/tools/crowbar
 	display_name = "crowbar"
 	path = /obj/item/tool/crowbar
-	cost = 2
+	cost = 1 //2
 
 //------------
 /datum/gear/tools/multitool
 	display_name = "multitool"
 	path = /obj/item/tool/multitool
-	cost = 2
+	cost = 1 //2
 
 //------------
 
 /datum/gear/tools/pickaxe
 	display_name = "pickaxe"
 	path = /obj/item/tool/pickaxe
-	cost = 2
+	cost = 1 //2
 
 //------------
 /datum/gear/tools/shovel
 	display_name = "shovel"
 	path = /obj/item/tool/shovel
-	cost = 2
+	cost = 1 //2
 
 //------------
 
@@ -71,12 +71,12 @@
 /datum/gear/tools/powercellsmall
 	display_name = "power cell, small"
 	path = /obj/item/cell/small/high
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/tools/powercellmedium
 	display_name = "power cell, medium"
 	path = /obj/item/cell/medium/high
-	cost = 2
+	cost = 1 //2
 
 /datum/gear/tools/ducttape
 	display_name = "duct tape"
