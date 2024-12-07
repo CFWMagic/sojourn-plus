@@ -29,18 +29,18 @@
 	display_name = "cigar selection"
 	path = /obj/item/clothing/mask/smokable/cigarette/cigar
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/cigarette
 	display_name = "cigarette pack selection"
 	path = /obj/item/storage/fancy/cigarettes
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/cigarcase
 	display_name = "cigar case"
 	path = /obj/item/storage/fancy/cigar
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/dice
 	display_name = "dice pack"
@@ -72,7 +72,7 @@
 	display_name = "pipe selection"
 	path = /obj/item/clothing/mask/smokable/pipe
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/plushies
 	display_name = "plushie selection"

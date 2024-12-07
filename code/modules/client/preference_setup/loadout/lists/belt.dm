@@ -1,9 +1,9 @@
 /datum/gear/belt
-	display_name = "champion belt"
-	path = /obj/item/storage/belt/champion
+	display_name = "webbing"
+	path = /obj/item/storage/belt/webbing
 	slot = slot_belt
 	sort_category = "Utility belts"
-	cost = 0 //4
+	cost = 1 //4
 
 /datum/gear/belt/multi
 	display_name = "multibelt, loaded"

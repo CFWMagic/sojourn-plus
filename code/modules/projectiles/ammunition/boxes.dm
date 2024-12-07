@@ -127,7 +127,7 @@
 	matter = list(MATERIAL_CARDBOARD = 1)
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	max_ammo = 30 //60
+	max_ammo = 60 //30
 
 /obj/item/ammo_magazine/ammobox/magnum_40/scrap
 	name = "ammunition packet (old 10mm Magnum)"

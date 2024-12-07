@@ -10,7 +10,7 @@
 	display_name = "aviators selection"
 	path = /obj/item/clothing/glasses/aviator
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/eyes/monocle
 	display_name = "monocle"
@@ -38,7 +38,7 @@
 	display_name = "sunglasses selection"
 	path = /obj/item/clothing/glasses/sunglasses
 	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/eyes/strapless
 	display_name = "eyepatch, strapless"

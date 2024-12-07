@@ -2,9 +2,14 @@
 // Should spawn in bag or in hand
 
 /datum/gear/armament
+	display_name = "flash"
+	path = /obj/item/device/flash
+	sort_category = "Armament"
+	cost = 1
+
+/datum/gear/armament/pistol
 	display_name = "Loaded Clarissa .35 Auto pistol (Rubber)"
 	path = /obj/item/gun/projectile/clarissa/preloaded
-	sort_category = "Armament"
 	slot = slot_in_backpack
 	cost = 1
 
@@ -36,11 +41,6 @@
 /datum/gear/armament/guncase
 	display_name = "Gun Case"
 	path = /obj/item/storage/backpack/guncase
-	cost = 1
-
-/datum/gear/armament/flash
-	display_name = "flash"
-	path = /obj/item/device/flash
 	cost = 1
 
 /datum/gear/armament/tacboot_knife

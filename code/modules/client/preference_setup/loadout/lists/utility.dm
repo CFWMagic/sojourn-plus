@@ -2,11 +2,13 @@
 	display_name = "zippo selection"
 	path = /obj/item/flame/lighter/zippo
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0 //1
 
 /datum/gear/utility
 	display_name = "briefcase"
 	path = /obj/item/storage/briefcase
 	sort_category = "Utility"
+	cost = 1 //2
 
 /datum/gear/utility/briefcasesecure
 	display_name = "briefcase, secure"
@@ -92,7 +94,7 @@
 /datum/gear/utility/lighter
 	display_name = "lighter"
 	path = /obj/item/flame/lighter
-	cost = 1
+	cost = 0 //1
 
 /datum/gear/utility/matchbook
 	display_name = "matchbook"
