@@ -23,6 +23,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 15 //10
 	multiple_sprites = 1
+	w_class = ITEM_SIZE_TINY //ITEM_SIZE_SMALL
 
 /obj/item/ammo_magazine/pistol_35/empty
 	icon_state = "pistol"
@@ -66,7 +67,7 @@
 	icon_state = "ldrum"
 	desc = "A 50 round drum magazine marked for 9mm."
 	origin_tech = list(TECH_COMBAT = 2)
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_NORMAL
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_DRUM
 	caliber = CAL_PISTOL
@@ -127,6 +128,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 20 //16
 	multiple_sprites = 1
+	w_class = ITEM_SIZE_TINY // ITEM_SIZE_SMALL
 
 /obj/item/ammo_magazine/highcap_pistol_35/empty
 	icon_state = "hpistol"
@@ -226,6 +228,7 @@
 	caliber = CAL_MAGNUM
 	max_ammo = 12 //10
 	multiple_sprites = 1
+	w_class = ITEM_SIZE_TINY // ITEM_SIZE_SMALL
 
 /obj/item/ammo_magazine/magnum_40/empty
 	icon_state = "magnum"
@@ -1137,7 +1140,7 @@
 
 /obj/item/ammo_magazine/m12
 	name = "20mm ammo drum (sabot slug)"
-	desc = "A 20mm ammo drum for automatic and semiautomatic shotguns, holds 12 shells"
+	desc = "A 20mm ammo drum for automatic and semiautomatic shotguns, holds 20 shells"
 	icon_state = "m12_hv"
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_DRUM
