@@ -174,7 +174,7 @@
 	..()
 	cell = new /obj/item/cell/small/greyson(src)
 	led = new /obj/item/computer_hardware/led/adv(src)
-//	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
+	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
 
 
 // PDA box
