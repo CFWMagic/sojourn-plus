@@ -70,12 +70,17 @@
 
 /datum/gear/tools/powercellsmall
 	display_name = "power cell, small"
-	path = /obj/item/cell/small/high
+	path = /obj/item/cell/small/greyson
 	cost = 1 //2
 
 /datum/gear/tools/powercellmedium
 	display_name = "power cell, medium"
-	path = /obj/item/cell/medium/high
+	path = /obj/item/cell/medium/greyson
+	cost = 1 //2
+
+/datum/gear/tools/powercelllarge
+	display_name = "power cell, large"
+	path = /obj/item/cell/large/greyson
 	cost = 1 //2
 
 /datum/gear/tools/ducttape

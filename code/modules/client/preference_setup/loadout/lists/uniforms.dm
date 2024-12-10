@@ -3,7 +3,7 @@
 	display_name = "wedding dress"
 	path = /obj/item/clothing/under/bride_white
 	slot = slot_w_uniform
-	sort_category = "Uniforms and Casual Dress"
+	sort_category = "Uniforms"
 	cost = 0
 
 /datum/gear/uniform/tracksuit

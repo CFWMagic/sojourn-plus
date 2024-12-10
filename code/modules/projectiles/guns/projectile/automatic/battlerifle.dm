@@ -117,8 +117,7 @@
 	name = "\"Warthog\" advanced rifle"
 	desc = "A heavy second-line rifle manufactured by H&S, as well as number of state arsenals. \
 		 A rifle fashioned for cover fire and cramped environments. Chambered in 8.6x70mm. \
-		 Its gaping bore packs a punch, however the recoil is incredibly violent and terrifying. \
-		 This one is fitted with a muzzle brake, fore grip, holographic sight and limited to 3-round bursts. it's almost manageable. Almost."
+		 This one is fitted with a muzzle brake, fore grip and holographic sight."
 	icon = 'icons/obj/guns/projectile/Warthog.dmi'
 	icon_state = "warthog"
 	item_state = "warthog"
@@ -130,8 +129,8 @@
 	init_recoil = RIFLE_RECOIL(0.8)
 	zoom_factors = list(0.4)
 	init_firemodes = list(
+		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
-		BURST_3_ROUND
 		)
 	serial_type = "H&S"
 

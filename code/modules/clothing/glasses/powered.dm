@@ -95,6 +95,15 @@
 	. = ..()
 	screenOverlay = global_hud.nvg
 
+/obj/item/clothing/glasses/powered/night/elite
+	name = "Military NVGs"
+	desc = "A set of Night Vision Goggles used by reconaissance troops."
+	tick_cost = 0.33 // As optimized as engineering NVGs
+
+/obj/item/clothing/glasses/powered/night/Initialize()
+	. = ..()
+	cell = new /obj/item/cell/small/greyson(src)
+
 /obj/item/clothing/glasses/powered/night/guild
 	name = "optimized night vision goggles"
 	desc = "Converted from boring mesons, this refined Guild design sports the benefits form the mesons power-saving making these last 20% longer than other NV goggles on the market!"

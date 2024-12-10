@@ -296,8 +296,8 @@
 		rad = 100
 	)
 	slowdown = -0.2 //super advanced hardsuit.
-	drain = 2
-	offline_slowdown = 4 // aalso fucking heavy.
+	drain = 1.2
+	offline_slowdown = 1.2 //4 // aalso fucking heavy.
 	offline_vision_restriction = 1
 	ablative_armor = 15
 	ablative_max = 15
@@ -312,6 +312,7 @@
 	glove_type = /obj/item/clothing/gloves/rig/combat/solfed
 
 /obj/item/rig/combat/solfed/equipped
+	cell_type =  /obj/item/cell/large/greyson
 	initial_modules = list(
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/storage,

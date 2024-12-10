@@ -3,7 +3,7 @@
 	display_name = "yellow apron"
 	path = /obj/item/clothing/suit/rank/botanist
 	slot = slot_wear_suit
-	sort_category = "Suits and Overwear"
+	sort_category = "Jackets"
 	cost = 0
 
 /datum/gear/suit/hell_apron

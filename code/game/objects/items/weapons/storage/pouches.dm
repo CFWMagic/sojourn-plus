@@ -622,7 +622,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	icon_state = "kniferig"
 	item_state = "kniferig"
 	price_tag = 50
-	storage_slots = 4 // 12 knives total counting stacks
+	storage_slots = 14 // 42 4 // 12 knives total counting stacks
 	can_hold = list(
 		/obj/item/stack/thrown/throwing_knife
 		)
@@ -641,7 +641,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	price_tag = 50
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	matter = list(MATERIAL_BIOMATTER = 10)
-	storage_slots = 4 // 12 arrows
+	storage_slots = 14 // 42 4 // 12 arrows
 	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
 	sliding_behavior = TRUE // It is by default a quickdraw quiver
@@ -684,7 +684,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	price_tag = 50
 	slot_flags = SLOT_BELT | SLOT_DENYPOCKET
 	matter = list(MATERIAL_BIOMATTER = 15) // Can hold a full stack of rods.
-	storage_slots = 4
+	storage_slots = 14 //4
 	w_class = ITEM_SIZE_NORMAL //ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_BULKY // Just in case a full stack won't fit.
 	sliding_behavior = TRUE // Quickdraw!

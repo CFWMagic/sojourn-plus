@@ -263,7 +263,7 @@
 
 /obj/item/tool/sword/katana
 	name = "katana"
-	desc = "Modern Japanese-style blade that has no curve to it. This one looks pretty sharp."
+	desc = "A historical blade of Japanese origin."
 	icon_state = "katana" // New sprite courtesy of Kavric
 	item_state = "katana"
 	hitsound = 'sound/weapons/heavyslash.ogg'

@@ -1,47 +1,42 @@
-/datum/gear/cosmetic
+/datum/gear/vanity
 	display_name = "handheld mirror"
-	sort_category = "Cosmetics"
+	sort_category = "Vanity"
 	path = /obj/item/mirror
 	cost = 0
 
 /*
-/datum/gear/cosmetic/lipstick
+/datum/gear/vanity/lipstick
 	display_name = "lipstick selection"
 	sort_category = "Cosmetics"
 	path = /obj/item/lipstick
 	flags = GEAR_HAS_TYPE_SELECTION
 */
 
-/datum/gear/cosmetic/comb
+/datum/gear/vanity/comb
 	display_name = "plastic comb"
-	sort_category = "Cosmetics"
 	path = /obj/item/haircomb
 	cost = 0
 
-/datum/gear/cosmetic/hairflower
+/datum/gear/vanity/hairflower
 	display_name = "hair flower pin selection"
-	sort_category = "Cosmetics"
 	path = /obj/item/clothing/head/hairflower
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
 
-/datum/gear/cosmetic/pin
+/datum/gear/vanity/pin
 	display_name = "hairpin selection"
-	sort_category = "Cosmetics"
 	path = /obj/item/clothing/head/pin
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
 
-/datum/gear/cosmetic/flowercrown
+/datum/gear/vanity/flowercrown
 	display_name = "flower crown selecton"
-	sort_category = "Cosmetics"
 	path = /obj/item/clothing/head/flowercrown
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
 
-/datum/gear/cosmetic/pin
+/datum/gear/vanity/pin
 	display_name = "Ear accesories"
-	sort_category = "Cosmetics"
 	path = /obj/item/clothing/head/pin/ear_pin
 	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_COLOR_SELECTION
 	cost = 0

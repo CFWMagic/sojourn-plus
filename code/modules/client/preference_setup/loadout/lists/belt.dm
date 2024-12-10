@@ -1,15 +1,27 @@
 /datum/gear/belt
+	display_name = "multibelt"
+	path = /obj/item/storage/belt/multi
+	slot = slot_belt
+	sort_category = "Belts"
+	cost = 1
+
+/datum/gear/belt/webbing
 	display_name = "webbing"
 	path = /obj/item/storage/belt/webbing
 	slot = slot_belt
-	sort_category = "Utility belts"
-	cost = 1 //4
+	cost = 2 //4
 
-/datum/gear/belt/multi
+/datum/gear/belt/utility/full
+	display_name = "tool belt, loaded"
+	path = /obj/item/storage/belt/utility/full
+	cost = 5 //2
+
+/datum/gear/belt/multi/full
 	display_name = "multibelt, loaded"
 	path = /obj/item/storage/belt/multi/full
 	cost = 8 //2
 
+/*
 /datum/gear/belt/tool
 	display_name = "tool belt"
 	path = /obj/item/storage/belt/utility
@@ -51,5 +63,4 @@
 		"EMT Belt"			=	/obj/item/storage/belt/medical/emt,
 	)
 	gear_tweaks += new /datum/gear_tweak/path(belts)
-
-
+*/

@@ -1098,7 +1098,7 @@
  * Storage Types
  */
 /obj/item/clothing/suit/storage/vest
-	name = "webbed armor"
+	name = "webbed vest"
 	desc = "An armored vest used for day-to-day operations. This one has various pouches and straps attached."
 	icon_state = "webvest"
 	price_tag = 250 //Normal vest is worth 200, this one is worth 250 because it also has storage space

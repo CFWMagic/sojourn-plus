@@ -822,7 +822,7 @@
 	caliber = CAL_50
 	matter = list(MATERIAL_STEEL = 4)
 	ammo_type = /obj/item/ammo_casing/kurtz_50
-	max_ammo = 10 //7
+	max_ammo = 12 //7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/kurtz_50/empty

@@ -1,9 +1,28 @@
-// Eyes
+// Eyewear
+
 /datum/gear/eyes
+	display_name = "NVGs"
+	path = /obj/item/clothing/glasses/powered/night
+	slot = slot_glasses
+	sort_category = "Glasses and Eyewear"
+	cost = 2
+
+/datum/gear/glasses
+	display_name = "sunglasses selection"
+	path = /obj/item/clothing/glasses/sunglasses
+	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 1
+
+/datum/gear/eyes/wgoggles
+	display_name = "welding goggles"
+	path = /obj/item/clothing/glasses/welding
+	slot = slot_glasses
+	cost = 1
+
+/datum/gear/eyes/eyepatch
 	display_name = "eyepatch"
 	path = /obj/item/clothing/glasses/eyepatch
 	slot = slot_glasses
-	sort_category = "Glasses and Eyewear"
 	cost = 0
 
 /datum/gear/eyes/aviators
@@ -33,12 +52,6 @@
 	path = /obj/item/clothing/glasses/binoclard_lenses
 	flags = GEAR_HAS_TYPE_SELECTION
 	cost = 0
-
-/datum/gear/eyes/sunglasses
-	display_name = "sunglasses selection"
-	path = /obj/item/clothing/glasses/sunglasses
-	flags = GEAR_HAS_TYPE_SELECTION
-	cost = 0 //1
 
 /datum/gear/eyes/strapless
 	display_name = "eyepatch, strapless"

@@ -272,6 +272,31 @@ A list of items and costs is stored under the datum of every game mode, alongsid
 	hidden_uplink.uses = DEFAULT_TELECRYSTAL_AMOUNT
 	hidden_uplink.trigger_code = 1445
 
+// Military Uplink
+/obj/item/tool/multitool/hacktool/military
+
+	name = "military multitool"
+	icon_state = "military_multitool"
+	desc = "A particularly complicated piece of hardware found in use with special forces units."
+	suitable_cell = /obj/item/cell/medium
+	tool_qualities = list(QUALITY_PULSING = 60)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 1, MATERIAL_DIAMOND = 1)
+	use_power_cost = 0.5
+	workspeed = 2.0
+	max_upgrades = 5
+
+/obj/item/tool/multitool/hacktool/military/Initialize()
+	. = ..()
+	cell = new /obj/item/cell/medium/greyson(src)
+
+obj/item/tool/multitool/hacktool/military/New(loc, mind, crystal_amount)
+	..(loc)
+	hidden_uplink = new(src, mind, crystal_amount)
+
+/obj/item/tool/multitool/hacktool/military/attack_self(mob/user as mob)
+	if(hidden_uplink)
+		hidden_uplink.trigger(user)
+		hidden_uplink.uses = DEFAULT_TELECRYSTAL_AMOUNT
 
 
 //Uplink beacon

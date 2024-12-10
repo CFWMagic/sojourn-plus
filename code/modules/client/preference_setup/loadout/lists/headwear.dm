@@ -2,7 +2,7 @@
 	display_name = "ushanka"
 	path = /obj/item/clothing/head/ushanka
 	slot = slot_head
-	sort_category = "Hats and Headwear"
+	sort_category = "Headwear"
 	cost = 0
 
 /datum/gear/head/bandana

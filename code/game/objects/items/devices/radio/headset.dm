@@ -119,7 +119,7 @@
 	ks2type = /obj/item/device/encryptionkey/headset_bs/sergeant
 
 /obj/item/device/radio/headset/headset_blackshield/bowman
-	name = "blackshield bowman headset"
+	name = "bowman headset"
 	desc = "This headset of questionable quality was made years ago for Sol cargo pilots, it's hard to ingore the rattling noise whenever you turn your head too fast. This has a small symbol denoting its built-in backup transmitter."
 	icon_state = "bs_bowman_headset"
 	item_state = "bs_bowman_headset"
@@ -134,8 +134,8 @@
 	ks2type = /obj/item/device/encryptionkey/headset_bs/sergeant
 
 /obj/item/device/radio/headset/headset_blackshield/bowman/solfed
-	name = "bowman headset"
-	desc = "Looks an awful lot like the headsets used by the blackshield, despite it this one appears to be quite old."
+	name = "military bowman headset"
+	desc = "Looks an awful lot like the headsets used by the blackshield, this one seems to have additional functionality."
 	ks2type = /obj/item/device/encryptionkey/syndicate
 
 /obj/item/device/radio/headset/radiohat_blackshield // No longer a cap, a honest to god cap with a FUNCTIONAL headset. - Seb

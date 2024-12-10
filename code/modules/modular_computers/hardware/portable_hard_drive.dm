@@ -74,7 +74,6 @@
 	desc = "A removable disk used to store enormous amounts of data."
 	icon_state = "onestar"
 	max_capacity = 1024
-	origin_tech = list(TECH_DATA = 4)
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 0.5, MATERIAL_PLATINUM = 1)
 	price_tag = 800
 
@@ -83,6 +82,7 @@
 	icon_state = "onestar"
 	default_files = list(
 		/datum/computer_file/program/filemanager,
+		/datum/computer_file/program/chem_catalog_military,
 		/datum/computer_file/program/access_decrypter,
 		/datum/computer_file/program/bootkit,
 		/datum/computer_file/program/ntnet_dos,

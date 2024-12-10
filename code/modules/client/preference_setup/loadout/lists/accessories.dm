@@ -1,9 +1,72 @@
+
 /datum/gear/accessory
+	display_name = "necklace selection"
+	path = /obj/item/clothing/accessory/necklace
+	flags = GEAR_HAS_TYPE_SELECTION
+	sort_category = "Accessories"
+	cost = 0
+
+/*
+/datum/gear/accessory/holster
+	display_name = "holster selection"
+	path = /obj/item/clothing/accessory/holster
+	flags = GEAR_HAS_SUBTYPE_SELECTION
+	cost = 1
+*/
+/datum/gear/accessory/holster
+	display_name = "shoulder holster"
+	path = /obj/item/clothing/accessory/holster
+	cost = 1
+
+/datum/gear/accessory/holster/waist
+	display_name = "waist holster"
+	path = /obj/item/clothing/accessory/holster/waist
+	cost = 1
+
+/datum/gear/accessory/holster/hip
+	display_name = "hip holster"
+	path = /obj/item/clothing/accessory/holster/hip
+	cost = 1
+
+/datum/gear/accessory/holster/leg
+	display_name = "leg holster"
+	path = /obj/item/clothing/accessory/holster/leg
+	cost = 1
+
+/datum/gear/accessory/holster/saber
+	display_name = "saber scabbard"
+	path = /obj/item/clothing/accessory/holster/saber
+	cost = 1
+
+/datum/gear/accessory/holster/saber/machete
+	display_name = "machete scabbard"
+	path = /obj/item/clothing/accessory/holster/saber/machete
+	cost = 1
+
+/datum/gear/accessory/holster/saber/cutlass
+	display_name = "cutlass holster"
+	path = /obj/item/clothing/accessory/holster/saber/cutlass
+	cost = 1
+
+/datum/gear/accessory/holster/saber/katana
+	display_name = "katana \"Saya\" sheath"
+	path = /obj/item/clothing/accessory/holster/saber/saya
+	cost = 1
+
+/datum/gear/accessory/holster/cheap_sheath
+	display_name = "cheap scabbard"
+	path = /obj/item/clothing/accessory/holster/saber/machete/cheap
+	cost = 1
+
+/datum/gear/accessory/holster/church
+	display_name = "Absolutist Sword Scabbard"
+	path = /obj/item/clothing/accessory/holster/saber/greatsword/churchprint
+	cost = 1
+
+/datum/gear/accessory/dropstraps
 	display_name = "drop straps"
 	path = /obj/item/clothing/accessory/dropstraps
 	slot = slot_accessory_buffer
-	sort_category = "Accessories"
-	cost = 0
 
 /datum/gear/accessory/armband
 	display_name = "armband selection"
@@ -22,11 +85,6 @@
 /datum/gear/accessory/locket
 	display_name = "locket"
 	path = /obj/item/clothing/accessory/locket
-
-/datum/gear/accessory/necklace
-	display_name = "necklace selection"
-	path = /obj/item/clothing/accessory/necklace
-	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/accessory/choker
 	display_name = "choker selection"
@@ -161,3 +219,4 @@
 	display_name = "badge (colorable)"
 	path = /obj/item/clothing/accessory/pin
 	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_COLOR_SELECTION
+

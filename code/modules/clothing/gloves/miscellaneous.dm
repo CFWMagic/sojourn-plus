@@ -93,6 +93,7 @@
 	icon_state = "ihscombat"
 	item_state = "ihscombat"
 	armor_list = list(melee = 6, bullet = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.25 // Insulated to some degree
 	price_tag = 150
 
 /obj/item/clothing/gloves/thick/swat/insulated
@@ -125,6 +126,7 @@
 /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 	name = "outdated gloves"
 	desc = "A pair of \"Iron Lock Security\" ablative gloves with plates designed to absorb energy projectiles, even after all this time no one has been able to improve its design by Greyson Positronic."
+	siemens_coefficient = 0 // Lostech insulated + ablative combination
 
 /obj/item/clothing/gloves/thick/swat/militia
 	name = "militia bulletproof gloves"
