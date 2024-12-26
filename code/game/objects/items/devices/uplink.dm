@@ -296,7 +296,7 @@ obj/item/tool/multitool/hacktool/military/New(loc, mind, crystal_amount)
 /obj/item/tool/multitool/hacktool/military/attack_self(mob/user as mob)
 	if(hidden_uplink)
 		hidden_uplink.trigger(user)
-		hidden_uplink.uses = DEFAULT_TELECRYSTAL_AMOUNT
+		hidden_uplink.uses = 50
 
 
 //Uplink beacon

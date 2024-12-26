@@ -176,9 +176,11 @@
 	led = new /obj/item/computer_hardware/led/adv(src)
 //	portable_drive = new /obj/item/computer_hardware/hard_drive/portable/elite/military(src)
 
+/*
 /obj/item/modular_computer/pda/military/install_default_programs()
 	..()
 	hard_drive.store_file(new /datum/computer_file/program/chem_catalog_military())
+*/
 
 // PDA box
 /obj/item/storage/box/PDAs

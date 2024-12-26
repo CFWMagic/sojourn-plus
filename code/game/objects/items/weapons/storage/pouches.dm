@@ -424,7 +424,7 @@ obj/item/storage/pouch/large_generic/advmedic/populate_contents()
 	icon_state = "ammo"
 	item_state = "ammo"
 
-	storage_slots = 7 //4
+	storage_slots = 4
 	w_class = ITEM_SIZE_SMALL //ITEM_SIZE_TINY
 	max_w_class = ITEM_SIZE_NORMAL
 
