@@ -40,13 +40,14 @@
 	name = "multibelt"
 
 /obj/item/storage/belt/multi/full/populate_contents()
-	new /obj/item/tool/hammer(src)
+
+	new /obj/item/tool/saw/chain(src)
+	new /obj/item/tool/wrench/big_wrench(src)
+	new /obj/item/tool/wirecutters/armature(src)
+	new /obj/item/tool/polytool(src)
+	new /obj/item/tool/hammer/deadblow(src)
 	new /obj/item/tool/shovel(src)
-	new /obj/item/tool/weldingtool(src)
 	new /obj/item/tool/crowbar(src)
-	new /obj/item/tool/wirecutters/pliers(src)
-	new /obj/item/tool/saw(src)
-	new /obj/item/tool/multitool(src)
 
 /obj/item/storage/belt/sci
 	icon_state = "scibelt"

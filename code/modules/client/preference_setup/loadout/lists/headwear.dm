@@ -30,6 +30,36 @@
 	path = /obj/item/clothing/head/beret/custom
 	flags = GEAR_HAS_COLOR_SELECTION
 
+/datum/gear/head/helmet
+	display_name = "helmet"
+	path = /obj/item/clothing/head/helmet
+	cost = 1
+
+/datum/gear/head/helmet/ballistic
+	display_name = "ballistic helmet"
+	path = /obj/item/clothing/head/helmet/ballistic
+	cost = 1
+
+/datum/gear/head/helmet/ballistic
+	display_name = "hazmat helmet"
+	path = /obj/item/clothing/head/helmet/hazcap
+	cost = 1
+
+/datum/gear/head/helmet/faceshield
+	display_name = "ballistic mask"
+	path = /obj/item/clothing/head/helmet/faceshield/bmask
+	cost = 2
+
+/datum/gear/head/helmet/faceshield/altyn
+	display_name = "altyn helmet"
+	path = /obj/item/clothing/head/helmet/faceshield/altyn
+	cost = 3
+
+/datum/gear/head/helmet/faceshield/paramedic
+	display_name = "combat medic helmet"
+	path = /obj/item/clothing/head/helmet/faceshield/paramedic
+	cost = 3
+
 /datum/gear/head/bikerhelmet
 	display_name = "biker helmet selection"
 	path = /obj/item/clothing/head/helmet/biker

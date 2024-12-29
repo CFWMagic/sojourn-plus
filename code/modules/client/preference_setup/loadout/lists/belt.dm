@@ -12,9 +12,9 @@
 	cost = 2 //4
 
 /datum/gear/belt/utility/full
-	display_name = "tool belt, loaded"
+	display_name = "toolbelt, loaded"
 	path = /obj/item/storage/belt/utility/full
-	cost = 5 //2
+	cost = 4 //2
 
 /datum/gear/belt/multi/full
 	display_name = "multibelt, loaded"

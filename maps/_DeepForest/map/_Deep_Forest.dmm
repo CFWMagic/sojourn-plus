@@ -1916,6 +1916,11 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/vending/medical{
+	price_tag = 0;
+	prices = null;
+	idle_power_usage = 10
+	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
 "byT" = (
@@ -3473,6 +3478,13 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/asteroid/grass,
 /area/nadezhda/outside/meadow)
+"cBX" = (
+/obj/structure/closet/crate/serbcrate_gray,
+/obj/effect/floor_decal/industrial/box/white,
+/obj/item/storage/firstaid/ifak,
+/obj/item/storage/firstaid/ifak,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/nadezhda/dungeon/outside/safehouse)
 "cCc" = (
 /obj/structure/safe,
 /obj/item/bluespace_harpoon,
@@ -3801,10 +3813,10 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/nadezhda/dungeon/outside/safehouse)
 "cMx" = (
-/obj/machinery/vending/medical{
+/obj/machinery/vending/wallmed/lobby{
 	price_tag = 0;
 	prices = null;
-	idle_power_usage = 10
+	pixel_x = 26
 	},
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
@@ -3838,8 +3850,8 @@
 /turf/simulated/floor/wood/wild4,
 /area/nadezhda/dungeon/outside/prepper/vault/floor3)
 "cNY" = (
-/obj/structure/table/onestar,
 /obj/item/storage/firstaid/surgery/combat,
+/obj/structure/table/onestar,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
 "cOk" = (
@@ -4620,8 +4632,8 @@
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/outsider)
 "drM" = (
-/obj/structure/table/onestar,
 /obj/item/device/defib_kit/compact/combat/adv/loaded,
+/obj/structure/table/onestar,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
 "dsd" = (
@@ -6046,24 +6058,7 @@
 /obj/structure/closet/crate/serbcrate_gray,
 /obj/effect/floor_decal/industrial/box/white,
 /obj/item/clothing/suit/armor/platecarrier/solfed,
-/obj/item/clothing/suit/armor/platecarrier/solfed,
 /obj/item/clothing/suit/armor/platecarrier/solfed/corpsman,
-/obj/item/clothing/suit/armor/platecarrier/solfed/corpsman,
-/obj/item/clothing/glasses/powered/night/elite,
-/obj/item/device/radio/headset/headset_blackshield/bowman/solfed,
-/obj/item/device/radio/headset/headset_blackshield/bowman/solfed,
-/obj/item/storage/belt/webbing,
-/obj/item/storage/belt/webbing,
-/obj/item/clothing/gloves/thick/swat,
-/obj/item/clothing/gloves/thick/swat,
-/obj/item/clothing/shoes/jackboots/duty,
-/obj/item/clothing/shoes/jackboots/duty,
-/obj/item/clothing/under/rank/fatigues/camo/solfed,
-/obj/item/clothing/under/rank/fatigues/camo/solfed,
-/obj/item/clothing/head/rank/solfedrecon,
-/obj/item/clothing/head/rank/solfedmed,
-/obj/item/clothing/shoes/magboots/merc,
-/obj/item/clothing/shoes/magboots/merc,
 /obj/item/device/radio/headset/headset_blackshield/bowman/solfed,
 /obj/item/device/radio/headset/headset_blackshield/bowman/solfed,
 /obj/item/storage/belt/webbing,
@@ -6074,7 +6069,6 @@
 /obj/item/clothing/under/rank/fatigues/camo/solfed,
 /obj/item/clothing/head/rank/solfedmed,
 /obj/item/clothing/head/rank/solfedrecon,
-/obj/item/clothing/glasses/powered/night/elite,
 /obj/item/clothing/gloves/thick/swat,
 /obj/item/clothing/gloves/thick/swat,
 /obj/item/clothing/shoes/magboots/merc,
@@ -12139,14 +12133,8 @@
 "iCF" = (
 /obj/effect/floor_decal/industrial/box/white,
 /obj/structure/closet/crate/serbcrate_gray,
-/obj/item/cell/medium/greyson,
-/obj/item/cell/medium/greyson,
 /obj/item/cell/small/greyson,
 /obj/item/cell/small/greyson,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/tool/multitool/hacktool/military,
-/obj/item/storage/toolbox/syndicate,
 /obj/item/storage/toolbox/syndicate,
 /obj/item/cell/medium/greyson,
 /obj/item/cell/medium/greyson,
@@ -12745,6 +12733,14 @@
 /obj/random/pouch,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/nadezhda/dungeon/outside/prepper)
+"iZU" = (
+/obj/machinery/vending/wallmed/lobby{
+	price_tag = 0;
+	prices = null;
+	pixel_x = -26
+	},
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/nadezhda/dungeon/outside/safehouse)
 "jam" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/tool/medmultitool/medimplant,
@@ -13557,46 +13553,6 @@
 /obj/item/storage/deferred/rations,
 /obj/item/storage/deferred/rations,
 /obj/item/storage/deferred/rations,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
-/obj/item/reagent_containers/food/snacks/openable/liquidfood,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -17116,22 +17072,6 @@
 /obj/item/stack/material/compressed_matter/full,
 /obj/item/stack/material/compressed_matter/full,
 /obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
-/obj/item/stack/material/compressed_matter/full,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/nadezhda/dungeon/outside/safehouse)
 "mgT" = (
@@ -19062,16 +19002,14 @@
 /obj/structure/closet/crate/serbcrate_gray,
 /obj/item/circuitboard/rdservercontrol,
 /obj/item/circuitboard/autolathe_industrial,
-/obj/item/modular_computer/pda/military,
-/obj/item/modular_computer/pda/military,
-/obj/item/computer_hardware/hard_drive/portable/elite/military,
-/obj/item/computer_hardware/hard_drive/portable/elite/military,
-/obj/item/card/id/syndicate/solfed,
-/obj/item/card/id/syndicate/solfed,
-/obj/item/card/id/syndicate/solfed,
-/obj/item/card/id/syndicate/solfed,
-/obj/item/modular_computer/pda/military,
-/obj/item/modular_computer/pda/military,
+/obj/item/circuitboard/bullet_fab,
+/obj/item/circuitboard/chemical_dispenser/industrial,
+/obj/item/circuitboard/autolathe_disk_cloner,
+/obj/item/circuitboard/mechfab,
+/obj/item/circuitboard/rdconsole_unlicensed,
+/obj/item/circuitboard/rdserver,
+/obj/item/circuitboard/circuit_imprinter,
+/obj/item/circuitboard/destructive_analyzer,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/nadezhda/dungeon/outside/safehouse)
 "nuk" = (
@@ -24649,6 +24587,10 @@
 "rlO" = (
 /obj/effect/floor_decal/industrial/box/white,
 /obj/structure/closet/crate/serbcrate_gray,
+/obj/item/card/id/syndicate/solfed,
+/obj/item/card/id/syndicate/solfed,
+/obj/item/modular_computer/pda/military,
+/obj/item/computer_hardware/hard_drive/portable/elite/military,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/nadezhda/dungeon/outside/safehouse)
 "rlP" = (
@@ -26376,6 +26318,11 @@
 	},
 /turf/simulated/floor/wood/wild5,
 /area/nadezhda/dungeon/outside/smuggler_zone_u)
+"suQ" = (
+/obj/structure/table/onestar,
+/obj/random/credits/c5000,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/nadezhda/dungeon/outside/safehouse)
 "suV" = (
 /obj/item/gun/projectile/rpg,
 /obj/item/ammo_casing/rocket,
@@ -26850,12 +26797,6 @@
 "sMu" = (
 /obj/effect/floor_decal/industrial/box/white,
 /obj/structure/closet/crate/serbcrate_gray,
-/obj/item/stack/material/biomatter/full,
-/obj/item/stack/material/biomatter/full,
-/obj/item/stack/material/biomatter/full,
-/obj/item/stack/material/biomatter/full,
-/obj/item/stack/material/biomatter/full,
-/obj/item/stack/material/biomatter/full,
 /obj/item/stack/material/biomatter/full,
 /obj/item/stack/material/biomatter/full,
 /obj/item/stack/material/biomatter/full,
@@ -28165,7 +28106,12 @@
 /area/nadezhda/outside/one_star)
 "tKL" = (
 /obj/structure/table/onestar,
-/obj/random/credits/c5000,
+/obj/machinery/recharger/industrial{
+	pixel_x = -5
+	},
+/obj/machinery/recharger/industrial{
+	pixel_x = 5
+	},
 /turf/simulated/floor/tiled/dark/panels,
 /area/nadezhda/dungeon/outside/safehouse)
 "tLd" = (
@@ -29776,10 +29722,7 @@
 /obj/structure/closet/crate/medical,
 /obj/item/reagent_containers/spray/sterilizine,
 /obj/item/reagent_containers/spray/sterilizine,
-/obj/item/reagent_containers/spray/sterilizine,
 /obj/item/storage/firstaid/combat,
-/obj/item/storage/firstaid/ifak,
-/obj/item/storage/firstaid/ifak,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
 "uTO" = (
@@ -31111,7 +31054,6 @@
 /obj/item/ammo_magazine/kurtz_50,
 /obj/item/ammo_magazine/kurtz_50,
 /obj/item/ammo_magazine/kurtz_50,
-/obj/item/ammo_magazine/kurtz_50,
 /obj/item/gun/projectile/lamia/socom,
 /obj/item/ammo_magazine/ammobox/kurtz_50,
 /obj/item/ammo_magazine/ammobox/kurtz_50,
@@ -32388,7 +32330,12 @@
 /area/nadezhda/dungeon/outside/prepper/vault/entryway)
 "wPp" = (
 /obj/structure/table/onestar,
-/obj/machinery/recharger/industrial,
+/obj/machinery/recharger/industrial{
+	pixel_x = -5
+	},
+/obj/machinery/recharger/industrial{
+	pixel_x = 5
+	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/nadezhda/dungeon/outside/safehouse)
 "wPw" = (
@@ -34205,6 +34152,13 @@
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/nadezhda/dungeon/outside/prepper/vault/floor5)
+"yem" = (
+/obj/machinery/vending/printomat{
+	price_tag = 0;
+	prices = null
+	},
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/nadezhda/dungeon/outside/safehouse)
 "yeK" = (
 /obj/structure/flora/ausbushes/grassybush,
 /obj/structure/flora/small/bushc1,
@@ -91421,7 +91375,7 @@ sBD
 xMv
 nBQ
 byN
-cYV
+iZU
 dAC
 aZh
 uqo
@@ -91831,7 +91785,7 @@ chp
 rHY
 sBD
 etl
-gDV
+cBX
 ofd
 aqw
 aqw
@@ -92046,11 +92000,11 @@ hzH
 hzH
 sBD
 uoN
-wlE
+suQ
 wlE
 cYV
 dAC
-pDX
+azR
 azR
 azR
 drM
@@ -92260,8 +92214,8 @@ lHl
 cYV
 dAC
 cMx
-azR
 uGt
+pDX
 qtw
 chp
 "}
@@ -95389,7 +95343,7 @@ sBD
 sBD
 sBD
 sBD
-wPp
+yem
 cYV
 cYV
 xrf

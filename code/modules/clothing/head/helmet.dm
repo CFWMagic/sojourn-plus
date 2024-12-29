@@ -1879,7 +1879,7 @@
 		return 1
 
 /obj/item/clothing/head/helmet/faceshield/paramedic
-	name = "advanced paramedic helmet"
+	name = "combat medic helmet"
 	desc = "A smart helmet that aids in medical tracking."
 	icon_state = "trauma_team"
 	item_state = "trauma_team"

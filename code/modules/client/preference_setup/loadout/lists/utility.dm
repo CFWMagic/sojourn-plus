@@ -69,12 +69,11 @@
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced/golden
 	cost = 3
 
-/*
 /datum/gear/utility/hard_drive/portable/elite/military
 	display_name = "data disk, military"
 	path = /obj/item/computer_hardware/hard_drive/portable/elite/military
 	cost = 1
-*/
+
 
 /datum/gear/utility/paicard
 	display_name = "personal AI device"

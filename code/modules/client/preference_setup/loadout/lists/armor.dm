@@ -39,19 +39,29 @@
 /datum/gear/armor/platecarrier
 	display_name = "plate carrier"
 	path = /obj/item/clothing/suit/armor/platecarrier
-	cost = 3
+	cost = 4
 
 /datum/gear/armor/platecarrier/corpsman
 	display_name = "corpsman plate carrier"
 	path = /obj/item/clothing/suit/armor/platecarrier/corpsman
-	cost = 3
+	cost = 4
 
 /datum/gear/armor/platecarrier/solfed
 	display_name = "military plate carrier"
 	path = /obj/item/clothing/suit/armor/platecarrier/solfed
-	cost = 4
+	cost = 6
 
 /datum/gear/armor/platecarrier/solfed/corpsman
 	display_name = "military corpsman plate carrier"
 	path = /obj/item/clothing/suit/armor/platecarrier/solfed/corpsman
-	cost = 4
+	cost = 6
+
+/datum/gear/armor/void/odst
+	display_name = "military void suit"
+	path = /obj/item/clothing/suit/space/void/odst
+	cost = 8
+
+/datum/gear/armor/rig/combat/solfed
+	display_name = "military rig suit"
+	path = /obj/item/rig/combat/solfed
+	cost = 10
