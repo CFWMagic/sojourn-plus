@@ -223,7 +223,7 @@
 /obj/item/shockpaddles/linked/combat/advanced
 	name = "advanced defibrillator paddles"
 	desc = "A pair of ploymore-gripped paddles with flat metals surfaces that are used to deliver powerful controled electric shocks."
-	si_only = TRUE
+	si_only = FALSE // TRUE
 	advanced_pads = TRUE
 
 //paddles

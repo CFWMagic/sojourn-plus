@@ -255,27 +255,32 @@
 	new /obj/item/reagent_containers/syringe/stim/ultra_surgeon(src) // Antags don't come with the medical perk, this helps them make use of the ATK provided
 
 /obj/item/storage/firstaid/surgery/combat
-	name = "combat surgery kit"
+	name = "military surgery kit"
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport of highly advanced tools."
 	icon = 'icons/obj/storage/deferred.dmi'
 	icon_state = "combat_surgery_kit"
 	item_state = "combat_surgery_kit"
-	storage_slots = 11 // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than Soteria made ones.
+	storage_slots = 14 // More space than Soteria kits //11  // Enough for the tools it holds, 1 more slot than standard surgical kits, but less than Soteria made ones.
 	max_w_class = ITEM_SIZE_NORMAL
 	matter = list(MATERIAL_PLASTIC = 12) // More slots
 	can_hold = list(
 		/obj/item/tool/bonesetter,
+		/obj/item/tool/cautery,
 		/obj/item/tool/saw/circular,
 		/obj/item/tool/hemostat,
 		/obj/item/tool/retractor,
 		/obj/item/tool/scalpel,
-		/obj/item/tool/surgicaldrill,
-		/obj/item/tool/tape_roll/fiber/medical,
 		/obj/item/tool/tape_roll/bonegel,
-		/obj/item/reagent_containers/syringe,
+		/obj/item/tool/surgicaldrill,
+		/obj/item/device/scanner,
 		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/reagent_containers/syringe,
 		/obj/item/tool/medmultitool,
-		/obj/item/stack/medical/bruise_pack/advanced
+		/obj/item/tool/tape_roll,
+		/obj/item/tool/tape_roll/fiber/medical,
+		/obj/item/stack/medical/bruise_pack/advanced,
+		/obj/item/stack/medical/ointment/advanced
 		)
 
 /obj/item/storage/firstaid/surgery/combat/populate_contents()
@@ -284,6 +289,7 @@
 	new /obj/item/tool/hemostat/adv(src)
 	new /obj/item/tool/retractor/adv(src)
 	new /obj/item/tool/bonesetter/adv(src)
+	new /obj/item/tool/cautery/adv(src)
 	new /obj/item/tool/tape_roll/fiber/medical(src)
 	new /obj/item/tool/tape_roll/bonegel(src)
 	new /obj/item/tool/saw/circular/medical(src)
@@ -371,6 +377,7 @@
 	else
 		..()
 	can_hold = list(
+		/obj/item/tool/medmultitool, 
 		/obj/item/device/scanner/health,
 		/obj/item/dnainjector,
 		/obj/item/reagent_containers/dropper,

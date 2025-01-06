@@ -34,8 +34,8 @@
 	var/base_block_chance = 35
 	var/slowdown_time = 1
 	armor_list = list(melee = 2, bullet = 2, energy = 1, bomb = 0, bio = 0, rad = 0)
-	var/max_durability = 200 //So we can brake and need healing time to time
-	var/durability = 200
+	var/max_durability = 500 //200 //So we can brake and need healing time to time
+	var/durability = 500 //200
 	var/can_block_proj = TRUE
 
 	has_alt_mode = TRUE
@@ -210,8 +210,8 @@
 	matter = list(MATERIAL_GLASS = 5, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 12)
 	price_tag = 100
 	attack_verb = list("shoved", "bashed")
-	max_durability = 120 //So we can brake and need healing time to time
-	durability = 120
+	max_durability = 500 //120 //So we can brake and need healing time to time
+	durability = 500 //120
 	var/cooldown = 0 //shield bash cooldown. based on world.time
 	var/picked_by_human = FALSE
 	var/mob/living/carbon/human/picking_human
@@ -259,8 +259,8 @@
 	armor_list = list(melee = 7, bullet = 2, energy = 3, bomb = 10, bio = 0, rad = 0)
 	base_block_chance = 60
 	matter = list(MATERIAL_GLASS = 5, MATERIAL_STEEL = 8, MATERIAL_PLASTEEL = 15)
-	max_durability = 300 //Strong so that we can protect folks from quote a few shots
-	durability = 300
+	max_durability = 800 //300 //Strong so that we can protect folks from quote a few shots
+	durability = 800 //300
 
 //Used for mobs as these has less materals and are pre-damageed
 /obj/item/shield/buckler/excelsior/dropped
@@ -295,6 +295,8 @@
 	w_class = ITEM_SIZE_HUGE
 	origin_tech = list(TECH_MATERIAL = 2)
 	matter = list(MATERIAL_GLASS = 20, MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 15)
+	max_durability = 1000 //300 //Strong so that we can protect folks from quote a few shots
+	durability = 1000 //300
 	price_tag = 230
 	base_block_chance = 60
 	attack_verb = list("shoved", "bashed")
@@ -397,10 +399,10 @@
 	flags = CONDUCT
 	throw_speed = 2
 	throw_range = 2
-	durability = 70
+	durability = 600 //70
 	matter = list(MATERIAL_STEEL = 8)
 	base_block_chance = 40
-	max_durability = 70 //So we can brake and need healing time to time
+	max_durability = 600 //70 //So we can brake and need healing time to time
 
 /obj/item/shield/riot/dozershield
 	name = "bulldozer shield"
@@ -417,8 +419,8 @@
 	matter = list(MATERIAL_STEEL = 16, MATERIAL_PLASTEEL = 10)
 	price_tag = 200
 	base_block_chance = 55
-	max_durability = 200
-	durability = 180
+	max_durability = 750 //200
+	durability = 750 //180
 	slowdown_hold = 1 // Unwieldy and makeshift in nature
 
 /obj/item/shield/hardsuit
@@ -440,8 +442,8 @@
 	base_block_chance = 70
 	attack_verb = list("smashed", "bashed")
 	armor_list = list(melee = 3, bullet = 5, energy = 2, bomb = 0, bio = 0, rad = 0)
-	max_durability = 500 //Basically a hardsuit mounted deployable wall, lasts during combat
-	durability = 500
+	max_durability = 2500 //500 //Basically a hardsuit mounted deployable wall, lasts during combat
+	durability = 2500 //500
 	var/cooldown = 0 //shield bash cooldown. based on world.time
 	var/picked_by_human = FALSE
 	var/mob/living/carbon/human/picking_human
@@ -518,8 +520,8 @@
 	matter = list(MATERIAL_STEEL = 6)
 	base_block_chance = 40
 	armor_list = list(melee = 3, bullet = 2, energy = 2, bomb = 0, bio = 0, rad = 0)
-	max_durability = 100 //So we can brake and need healing time to time
-	durability = 100
+	max_durability = 450 //150 //100 //So we can brake and need healing time to time
+	durability = 450 //150 //100
 
 /obj/item/shield/buckler/handmade/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
 	return base_block_chance
@@ -542,8 +544,8 @@
 	armor_list = list(melee = 7, bullet = 3, energy = 5, bomb = 10, bio = 0, rad = 0)
 	matter = list(MATERIAL_BONE = 6)
 	base_block_chance = 50
-	max_durability = 130 //So we can brake and need healing time to time
-	durability = 130
+	max_durability = 600 //130 //So we can brake and need healing time to time
+	durability = 600 //130
 
 /obj/item/shield/riot/tray
 	name = "tray shield"
@@ -555,8 +557,8 @@
 	throw_range = 4
 	matter = list(MATERIAL_STEEL = 4)
 	base_block_chance = 50
-	max_durability = 90 //So we can brake and need healing time to time
-	durability = 90
+	max_durability = 400 //90 //So we can brake and need healing time to time
+	durability = 400 //90
 	armor_list = list(melee = 5, bullet = 2, energy = 1, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/shield/riot/tray/get_protected_area(mob/user)
@@ -578,8 +580,8 @@
 	icon_state = "nt_shield"
 	item_state = "nt_shield"
 	price_tag = 2000
-	max_durability = 500 //Well clearly made to last it should require some repair post crusade
-	durability = 500
+	max_durability = 2000 //500 //Well clearly made to last it should require some repair post crusade
+	durability = 2000 //500
 	armor_list = list(melee = 7, bullet = 8, energy = 6, bomb = 15, bio = 0, rad = 0)
 	matter = list(MATERIAL_GLASS = 3, MATERIAL_STEEL = 10, MATERIAL_DURASTEEL = 20)
 	item_icons = list(
@@ -611,8 +613,8 @@
 	origin_tech = list(TECH_MATERIAL = 4, TECH_MAGNET = 3, TECH_ILLEGAL = 4)
 	attack_verb = list("shoved", "bashed")
 	var/active = 0
-	max_durability = 80 //So we can brake and need healing time to time
-	durability = 80
+	max_durability = 1500 //80 //So we can brake and need healing time to time
+	durability = 1500 //80
 	slot_flags = SLOT_BELT
 
 /obj/item/shield/buckler/energy/handle_shield(mob/user)
@@ -704,8 +706,8 @@
 	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 2)
 	price_tag = 250
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	max_durability = 35 //So we can brake and need healing time to time
-	durability = 35
+	max_durability = 600 //35 //So we can brake and need healing time to time
+	durability = 600 //35
 	var/cooldown = 0 //shield bash cooldown. based on world.time
 	var/picked_by_human = FALSE
 	var/mob/living/carbon/human/picking_human

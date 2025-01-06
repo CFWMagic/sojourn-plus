@@ -56,7 +56,7 @@
 	name = "infantryman's rations kit"
 	icon_state = "irp_box"
 	item_state = "irp_box"
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_BULKY //ITEM_SIZE_HUGE
 	desc = "A box of preserved, ready-to-eat food for soldiers and spacefarers on the go."
 	can_hold = list(/obj/item/storage/ration_pack)
 	initial_contents = list(/obj/item/storage/ration_pack = 7)
@@ -104,6 +104,7 @@
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport of highly advanced tools."
 	icon_state = "combat_surgery_kit"
 	item_state = "combat_surgery_kit"
+	storage_slots = 14 // More space than Soteria kits
 	initial_contents = list(
 		/obj/item/tool/bonesetter/adv,
 		/obj/item/tool/saw/circular/medical,
@@ -118,15 +119,23 @@
 		)
 	can_hold = list(
 		/obj/item/tool/bonesetter,
+		/obj/item/tool/cautery,
 		/obj/item/tool/saw/circular,
 		/obj/item/tool/hemostat,
 		/obj/item/tool/retractor,
 		/obj/item/tool/scalpel,
 		/obj/item/tool/surgicaldrill,
 		/obj/item/tool/tape_roll/bonegel,
-		/obj/item/reagent_containers/syringe, //We hold any syringe.
-		/obj/item/storage/pill_bottle, //We hold pill bottles as well
-		/obj/item/stack/medical/bruise_pack/advanced
+		/obj/item/tool/surgicaldrill,
+		/obj/item/device/scanner,
+		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/tool/medmultitool,
+		/obj/item/tool/tape_roll,
+		/obj/item/tool/tape_roll/fiber/medical,
+		/obj/item/stack/medical/bruise_pack/advanced,
+		/obj/item/stack/medical/ointment/advanced
 		)
 
 /obj/item/storage/deferred/meds

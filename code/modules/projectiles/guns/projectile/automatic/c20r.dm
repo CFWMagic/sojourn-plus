@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG
-	auto_eject = TRUE
+	auto_eject = FALSE
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 12)
 	price_tag = 2000
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'

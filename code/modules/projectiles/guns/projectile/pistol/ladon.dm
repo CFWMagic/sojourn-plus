@@ -15,7 +15,7 @@
 	damage_multiplier = 1.2
 	init_recoil = HANDGUN_RECOIL(1.3)
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	auto_eject = 1
+	auto_eject = 0
 	gun_tags = list(GUN_PROJECTILE, GUN_MAGWELL)
 	serial_type = "SD GmbH"
 	gun_parts = list(/obj/item/part/gun/frame/ladon = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/magnum = 1)

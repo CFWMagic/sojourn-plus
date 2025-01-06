@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BACK
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	auto_eject = 1
+	auto_eject = 0
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_URANIUM = 1)
 	price_tag = 2000
 	fire_sound = 'sound/weapons/guns/fire/dmr_fire.ogg'

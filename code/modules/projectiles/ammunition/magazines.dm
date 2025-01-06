@@ -1119,7 +1119,7 @@
 	max_ammo = 8
 	multiple_sprites = 1
 	w_class = ITEM_SIZE_TINY
-/*
+
 /obj/item/ammo_magazine/a75
 	name = "ammo magazine (19mm gyro)"
 	desc = "A 7 round magazine in 19mm gyro."
@@ -1135,7 +1135,7 @@
 /obj/item/ammo_magazine/a75/empty
 	initial_ammo = 0
 	icon_state = "gyropistol-0"
-*/
+
 ////////////Shotguns!////////////
 
 /obj/item/ammo_magazine/m12

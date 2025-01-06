@@ -286,7 +286,7 @@
 				/obj/item/gun/projectile/automatic/pulse_rifle = 0.1,
 				/obj/item/gun/projectile/shotgun/pump/combat = 3,
 				/obj/item/gun/projectile/shotgun/pug = 2,
-				///obj/item/gun/projectile/gyropistol = 1,
+				/obj/item/gun/projectile/gyropistol = 1,
 				/obj/item/gun/projectile/automatic/omnirifle/solmarine = 2,
 				/obj/item/gun/projectile/automatic/omnirifle = 1,
 				/obj/item/gun/projectile/automatic/c20r = 3,

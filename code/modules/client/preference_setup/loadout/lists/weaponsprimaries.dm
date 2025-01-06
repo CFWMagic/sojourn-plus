@@ -3,7 +3,7 @@
 
 /datum/gear/weaponsprimaries
 	display_name = "Mac 10, 9mm submachinegun"
-	path = /obj/item/device/flash
+	path = /obj/item/gun/projectile/automatic/mac
 	sort_category = "Weapons - Primaries"
 	cost = 2
 

@@ -59,10 +59,10 @@
 	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_LASER_CUTTING = 30, QUALITY_WIRE_CUTTING = 25, QUALITY_BONE_GRAFTING = 50)
 	suitable_cell = /obj/item/cell/medium
 	use_power_cost = 0.2 //Effective!
-	max_upgrades = 2
+	max_upgrades = 3
 	workspeed = 1.2
 	price_tag = 1400 // Super fancy
-	degradation = 2
+	degradation = 0.5
 	allow_greyson_mods = TRUE
 
 /obj/item/tool/medmultitool/medimplant
@@ -76,7 +76,7 @@
 	worksound = WORKSOUND_DRIVER_TOOL
 	flags = CONDUCT
 	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_GRAFTING = 40)
-	degradation = 0.5
+	degradation = 2.0
 	workspeed = 0.8
 	price_tag = 600 // Not nearly as fancy.
 	allow_greyson_mods = FALSE

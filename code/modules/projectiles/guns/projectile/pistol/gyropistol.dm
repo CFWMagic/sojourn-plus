@@ -1,4 +1,5 @@
-/* Leaving this for postereity, but handheld rapidfire explosives have just been cancer for the whole time we had them. regular players ignore them, powergamers abuse them let em die. - CDB
+// Leaving this for postereity, but handheld rapidfire explosives have just been cancer for the whole time we had them. regular players ignore them, powergamers abuse them let em die. - CDB
+// Re-enabling this because the obnoxious retard above has no idea what the fuck fun is.
 /obj/item/gun/projectile/gyropistol
 	name = "SA GP \"Novichok\""
 	desc = "A bulky pistol designed to fire 19mm self-propelled explosive rockets. Commonly referred to as the 'man-opener' by Void Wolves."
@@ -15,7 +16,7 @@
 	load_method = SINGLE_CASING|MAGAZINE //Nothing bad will happen
 	mag_well = MAG_WELL_PISTOL
 	magazine_type = /obj/item/ammo_magazine/a75
-	auto_eject = 1
+	auto_eject = 0
 	init_recoil = HANDGUN_RECOIL(0.1)
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/hpistol_magout.ogg'
@@ -39,5 +40,3 @@
 
 	icon_state = iconstring
 	set_item_state(itemstring)
-
-*/

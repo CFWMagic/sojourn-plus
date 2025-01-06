@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	auto_eject = 1
+	auto_eject = 0
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_DIAMOND = 2)
 	price_tag = 1750
 	fire_sound = 'sound/weapons/guns/fire/ostwind_fire.ogg'

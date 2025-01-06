@@ -19,7 +19,7 @@
 	fire_sound = 'sound/weapons/guns/fire/grease_fire.ogg'
 	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM)
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
-	auto_eject = 1
+	auto_eject = 0
 	init_recoil = SMG_RECOIL(1.2)
 	init_firemodes = list(
 		FULL_AUTO_600_NOLOSS,

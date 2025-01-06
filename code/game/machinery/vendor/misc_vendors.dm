@@ -7,19 +7,19 @@
 	product_ads = "Probably not bad for you!;Don't believe the scientists!;It's good for you!;Don't quit, buy more!;Smoke!;Nicotine heaven.;Best cigarettes since 2150.;Award-winning cigs.;Cigars avalible for premium customers.;Best taste in space!"
 	vend_delay = 34
 	icon_state = "cigs"
-	products = list(/obj/item/storage/fancy/cigarettes = 7,
-				/obj/item/storage/fancy/cigarettes/lonestar = 7,
-				/obj/item/storage/fancy/cigarettes/ishimura = 7,
-				/obj/item/storage/fancy/cigarettes/tannhauser = 7,
-				/obj/item/storage/fancy/cigarettes/brouzouf = 7,
-				/obj/item/storage/fancy/cigarettes/frozen = 7,
-				/obj/item/storage/fancy/cigarettes/shodan = 7,
-				/obj/item/storage/fancy/cigarettes/toha = 7,
-				/obj/item/storage/fancy/cigarettes/faith = 7,
-				/obj/item/storage/fancy/cigarettes/fortress = 7,
-				/obj/item/storage/fancy/cigarettes/fortressred = 7,
-				/obj/item/storage/fancy/cigarettes/fortressblue = 7,
-				/obj/item/storage/fancy/cigar = 2,
+	products = list(/obj/item/storage/fancy/cigarettes = 15,
+				/obj/item/storage/fancy/cigarettes/lonestar = 15,
+				/obj/item/storage/fancy/cigarettes/ishimura = 15,
+				/obj/item/storage/fancy/cigarettes/tannhauser = 15,
+				/obj/item/storage/fancy/cigarettes/brouzouf = 15,
+				/obj/item/storage/fancy/cigarettes/frozen = 15,
+				/obj/item/storage/fancy/cigarettes/shodan = 15,
+				/obj/item/storage/fancy/cigarettes/toha = 15,
+				/obj/item/storage/fancy/cigarettes/faith = 15,
+				/obj/item/storage/fancy/cigarettes/fortress = 15,
+				/obj/item/storage/fancy/cigarettes/fortressred = 15,
+				/obj/item/storage/fancy/cigarettes/fortressblue = 15,
+				/obj/item/storage/fancy/cigar = 5,
 				/obj/item/storage/chewables/tobacco/bad = 7,
 				/obj/item/storage/chewables/tobacco/deli = 7,
 				/obj/item/storage/chewables/tobacco/fine = 7,
@@ -54,8 +54,8 @@
 	contraband = list(/obj/item/flame/lighter/zippo/communist = 2,
 				/obj/item/flame/lighter/zippo/excelsior = 4,
 				/obj/item/flame/lighter/zippo/soyfed = 2,
-				/obj/item/storage/fancy/cigarettes/khi = 2,
-				/obj/item/storage/fancy/cigarettes/comred = 1)
+				/obj/item/storage/fancy/cigarettes/khi = 15,
+				/obj/item/storage/fancy/cigarettes/comred = 15)
 	prices = list(/obj/item/storage/fancy/cigarettes = 40,
 				/obj/item/storage/fancy/cigarettes/lonestar = 35,
 				/obj/item/storage/fancy/cigarettes/ishimura = 70,
@@ -352,7 +352,7 @@
 					/obj/item/toy/plushie/kitten = 10,
 					/obj/item/paper/card/cat = 10,
 					/mob/living/simple_animal/cat/kitten = 500 )
-	contraband = list(/mob/living/simple_animal/cat/kitten = 1)
+	contraband = list(/mob/living/simple_animal/cat/kitten = 3)
 	idle_power_usage = 50
 	auto_price = FALSE
 	always_open = TRUE

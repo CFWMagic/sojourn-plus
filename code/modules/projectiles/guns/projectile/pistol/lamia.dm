@@ -55,7 +55,7 @@
 	init_recoil = HANDGUN_RECOIL(0.7)
 	damage_multiplier = 1.3
 	price_tag = 1200
-	auto_eject = 1
+	auto_eject = 0
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	blacklist_upgrades = list(/obj/item/tool_upgrade/refinement/laserguide = TRUE) // Already has an underbarrel one, hence the recoil control
 	serial_type = "Sol Fed"
@@ -67,7 +67,7 @@
 	icon_state = "scoped_lamia"
 	item_state = "scoped_lamia"
 	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 5)
-	auto_eject = 1
+	auto_eject = 0
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	zoom_factors = list(0.4)
 	init_recoil = HANDGUN_RECOIL(0.7)

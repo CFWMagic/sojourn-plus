@@ -16,7 +16,7 @@
 	penetration_multiplier = 1
 	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_9MM, GUN_SILENCABLE, GUN_MAGWELL)
 	init_recoil = HANDGUN_RECOIL(1)
-	auto_eject = TRUE
+	auto_eject = FALSE
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
 		BURST_2_ROUND

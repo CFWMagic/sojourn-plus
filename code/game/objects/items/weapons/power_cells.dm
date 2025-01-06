@@ -101,10 +101,10 @@
 	price_tag = 500
 
 /obj/item/cell/large/greyson
-	name = "GP-SI \"Posi-cell 16000L\""
-	desc = "GP-SI branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	name = "One Star \"Posi-cell 20000L\""
+	desc = "One Star branded rechargeable L-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "greyson_b_omega"
-	maxcharge = 16000
+	maxcharge = 20000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_PLATINUM = 3, MATERIAL_URANIUM = 6)
@@ -268,10 +268,10 @@
 	price_tag = 250
 
 /obj/item/cell/medium/greyson
-	name = "GP-SI \"Posi-cell 1600M\""
-	desc = "GP-SI branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	name = "One Star \"Posi-cell 2000M\""
+	desc = "One Star branded rechargeable M-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "greyson_m_omega"
-	maxcharge = 1600
+	maxcharge = 2000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2, MATERIAL_URANIUM = 4)
@@ -431,10 +431,10 @@
 	price_tag = 65
 
 /obj/item/cell/small/greyson
-	name = "GP-SI \"Posi-cell 400S\""
-	desc = "GP-SI branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
+	name = "One Star \"Posi-cell 500S\""
+	desc = "One Star branded rechargeable S-standardized power cell that recharges itself over time. This type has yet to hit the market!"
 	icon_state = "greyson_s_omega"
-	maxcharge = 400
+	maxcharge = 500
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_PLATINUM = 1, MATERIAL_URANIUM = 2)

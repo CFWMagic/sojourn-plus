@@ -26,7 +26,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/sfrifle_magin.ogg'
 	cocked_sound 	= 'sound/weapons/guns/interact/rifle_boltforward.ogg'
 	gun_tags = list(GUN_PROJECTILE, GUN_SCOPE, GUN_MAGWELL)
-	auto_eject = 1
+	auto_eject = 0
 	auto_eject_sound = 'sound/weapons/guns/interact/sfrifle_cock.ogg'
 
 	init_firemodes = list(
@@ -77,7 +77,7 @@
 	price_tag = 2000
 	damage_multiplier = 1.2
 	extra_damage_mult_scoped = 0.2
-	auto_eject = 1
+	auto_eject = 0
 	auto_eject_sound = 'sound/weapons/guns/interact/sfrifle_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
 	zoom_factors = list(1)

@@ -246,7 +246,7 @@
 				R.fire_delay = pick(0.7,0.8,0.9,1,1.2,1.4)
 
 
-/*
+
 			if("gyro")//From gyropistol.dm, Arbitrary values
 				R.caliber = CAL_70
 				R.max_shells = rand(1,3)
@@ -266,7 +266,7 @@
 				list(mode_name="Single shot", mode_desc="fire one barrel at a time", burst=1, icon="semi"),
 				list(mode_name="Triple barrel",mode_desc="fire three barrels at once", burst=3, icon="auto"),
 
-				)*/
+				)
 		R.ensure_updates()
 		return R
 
